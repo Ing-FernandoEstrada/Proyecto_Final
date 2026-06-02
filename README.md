@@ -484,5 +484,3 @@ Dataset: EAGIC - Catastro de Medellín
 
 ---
 
-**Última actualización:** 2026-05-07
-
