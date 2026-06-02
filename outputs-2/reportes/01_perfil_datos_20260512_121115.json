@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "dataset": "EAGIC_Catastro",
+    "timestamp": "20260512_121115",
+    "registros": 100000,
+    "columnas": 7,
+    "memoria_mb": 7.219883918762207,
+    "duplicados_totales": 2,
+    "duplicados_completos": 4
+  },
+  "nulos": {
+    "id_predio": {
+      "cantidad": 0,
+      "porcentaje": 0.0,
+      "confiabilidad": 100.0
+    },
+    "estrato": {
+      "cantidad": 0,
+      "porcentaje": 0.0,
+      "confiabilidad": 100.0
+    },
+    "barrio_nombre": {
+      "cantidad": 0,
+      "porcentaje": 0.0,
+      "confiabilidad": 100.0
+    },
+    "avaluo_total": {
+      "cantidad": 0,
+      "porcentaje": 0.0,
+      "confiabilidad": 100.0
+    },
+    "area_construida": {
+      "cantidad": 3527,
+      "porcentaje": 3.53,
+      "confiabilidad": 96.47
+    },
+    "puntaje": {
+      "cantidad": 3527,
+      "porcentaje": 3.53,
+      "confiabilidad": 96.47
+    },
+    "tipo_construccion": {
+      "cantidad": 3527,
+      "porcentaje": 3.53,
+      "confiabilidad": 96.47
+    }
+  },
+  "numerico": {
+    "estrato": {
+      "tipo": "numérico",
+      "no_nulos": 100000,
+      "media": 2.06477,
+      "mediana": 2.0,
+      "std": 0.9260903970640422,
+      "min": 0.0,
+      "max": 4.0,
+      "q25": 2.0,
+      "q75": 3.0,
+      "ceros": 9149,
+      "pct_ceros": 9.15,
+      "negativos": 0,
+      "pct_negativos": 0.0,
+      "outliers": 9149,
+      "pct_outliers": 9.15,
+      "confiabilidad": 81.7
+    },
+    "avaluo_total": {
+      "tipo": "numérico",
+      "no_nulos": 100000,
+      "media": 178800976.08,
+      "mediana": 106899500.0,
+      "std": 3995838716.104657,
+      "min": 95000.0,
+      "max": 549685791000.0,
+      "q25": 67027750.0,
+      "q75": 152082000.0,
+      "ceros": 0,
+      "pct_ceros": 0.0,
+      "negativos": 0,
+      "pct_negativos": 0.0,
+      "outliers": 3835,
+      "pct_outliers": 3.84,
+      "confiabilidad": 96.16
+    },
+    "area_construida": {
+      "tipo": "numérico",
+      "no_nulos": 96473,
+      "media": 104.40103448633296,
+      "mediana": 77.0,
+      "std": 467.39456998016533,
+      "min": 0.0,
+      "max": 129090.0,
+      "q25": 50.0,
+      "q75": 118.0,
+      "ceros": 416,
+      "pct_ceros": 0.43,
+      "negativos": 0,
+      "pct_negativos": 0.0,
+      "outliers": 6249,
+      "pct_outliers": 6.48,
+      "confiabilidad": 93.09
+    },
+    "puntaje": {
+      "tipo": "numérico",
+      "no_nulos": 96473,
+      "media": 35.70440434111099,
+      "mediana": 36.0,
+      "std": 12.731313408284365,
+      "min": 0.0,
+      "max": 90.0,
+      "q25": 28.0,
+      "q75": 43.0,
+      "ceros": 1327,
+      "pct_ceros": 1.38,
+      "negativos": 0,
+      "pct_negativos": 0.0,
+      "outliers": 3911,
+      "pct_outliers": 4.05,
+      "confiabilidad": 94.57
+    }
+  },
+  "categorico": {
+    "id_predio": {
+      "tipo": "categórico",
+      "no_nulos": 100000,
+      "valores_unicos": 94507,
+      "valor_dominante": "5123471",
+      "freq_dominante": 7,
+      "pct_dominante": 0.01,
+      "diversidad": 99.99,
+      "top_5_valores": {
+        "5123471": 7,
+        "800020694": 7,
+        "700025819": 6,
+        "154185": 6,
+        "5189492": 6
+      },
+      "confiabilidad": 100.0
+    },
+    "barrio_nombre": {
+      "tipo": "categórico",
+      "no_nulos": 100000,
+      "valores_unicos": 54,
+      "valor_dominante": "LAS GRANJAS",
+      "freq_dominante": 6570,
+      "pct_dominante": 6.57,
+      "diversidad": 93.43,
+      "top_5_valores": {
+        "LAS GRANJAS": 6570,
+        "MORAVIA": 5121,
+        "CAMPO VALDES NO. 2": 4734,
+        "SAN ISIDRO": 4187,
+        "LA SALLE": 4069
+      },
+      "confiabilidad": 100.0
+    },
+    "tipo_construccion": {
+      "tipo": "categórico",
+      "no_nulos": 96473,
+      "valores_unicos": 4,
+      "valor_dominante": "R",
+      "freq_dominante": 84498,
+      "pct_dominante": 87.59,
+      "diversidad": 12.41,
+      "top_5_valores": {
+        "R": 84498,
+        "C": 6725,
+        " ": 4187,
+        "I": 1063
+      },
+      "confiabilidad": 96.47
+    }
+  },
+  "patrones_nulos": {
+    "area_construida_puntaje": {
+      "registros_ambos_nulos": 3527,
+      "porcentaje": 3.53
+    },
+    "area_construida_tipo_construccion": {
+      "registros_ambos_nulos": 3527,
+      "porcentaje": 3.53
+    },
+    "puntaje_tipo_construccion": {
+      "registros_ambos_nulos": 3527,
+      "porcentaje": 3.53
+    }
+  },
+  "correlaciones_altas": {
+    "avaluo_total_area_construida": 0.529
+  },
+  "calidad": {
+    "score_global": 99.09,
+    "completitud": 98.49,
+    "consistencia": 100.0,
+    "estado": "EXCELENTE"
+  }
+}

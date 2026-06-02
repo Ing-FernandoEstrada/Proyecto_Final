@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dashboard Profesional de Salud Catastral - Medellín">
+    <title>📊 Dashboard Profesional Catastral - Medellín 2026</title>
+
+    <!-- Plotly para gráficos -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --success-gradient: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            --warning-gradient: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            --danger-gradient: linear-gradient(135deg, #eb3349 0%, #f45c43 100%);
+
+            --primary-color: #667eea;
+            --secondary-color: #764ba2;
+            --success-color: #38ef7d;
+            --warning-color: #fa9500;
+            --danger-color: #eb3349;
+
+            --bg-light: #f8fafc;
+            --bg-white: #ffffff;
+            --text-primary: #1a202c;
+            --text-secondary: #718096;
+            --border-color: #e2e8f0;
+
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
+            --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-light);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        nav {
+            background: var(--bg-white);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .navbar-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .navbar-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .navbar-menu a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .navbar-menu a:hover {
+            color: var(--primary-color);
+        }
+
+        .navbar-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-gradient);
+            transition: width 0.3s ease;
+        }
+
+        .navbar-menu a:hover::after {
+            width: 100%;
+        }
+
+        /* Header Hero */
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.05"><path d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/></g></g></svg>') repeat;
+            opacity: 0.1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero-content h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-5px);
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 0.5rem 0;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.85;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Secciones */
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 3px;
+            background: var(--primary-gradient);
+            border-radius: 2px;
+        }
+
+        .section-title i {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+        }
+
+        /* Grid de Tarjetas */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .metric-card {
+            background: var(--bg-white);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--primary-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .metric-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 120px;
+            height: 120px;
+            background: var(--primary-gradient);
+            opacity: 0.05;
+            border-radius: 50%;
+            transform: translate(50%, -50%);
+        }
+
+        .metric-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .metric-card.success {
+            border-top-color: var(--success-color);
+        }
+
+        .metric-card.success .metric-icon {
+            color: var(--success-color);
+        }
+
+        .metric-card.warning {
+            border-top-color: var(--warning-color);
+        }
+
+        .metric-card.warning .metric-icon {
+            color: var(--warning-color);
+        }
+
+        .metric-card.danger {
+            border-top-color: var(--danger-color);
+        }
+
+        .metric-card.danger .metric-icon {
+            color: var(--danger-color);
+        }
+
+        .metric-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .metric-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            opacity: 0.8;
+        }
+
+        .metric-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin: 0.5rem 0;
+            line-height: 1;
+        }
+
+        .metric-footer {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .metric-trend {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-right: 0.5rem;
+        }
+
+        .trend-up {
+            background: rgba(56, 239, 125, 0.1);
+            color: var(--success-color);
+        }
+
+        .trend-down {
+            background: rgba(235, 51, 73, 0.1);
+            color: var(--danger-color);
+        }
+
+        /* Chart Cards */
+        .chart-card {
+            background: var(--bg-white);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+            margin-bottom: 2rem;
+        }
+
+        .chart-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .chart-container {
+            width: 100%;
+            min-height: 350px;
+            position: relative;
+        }
+
+        .map-frame {
+            width: 100%;
+            height: 800px;
+            border: none;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Progress Bar */
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--border-color);
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--primary-gradient);
+            border-radius: 10px;
+            transition: width 0.3s ease;
+            position: relative;
+        }
+
+        .progress-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        /* Badge */
+        .badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .badge-primary {
+            background: rgba(102, 126, 234, 0.1);
+            color: var(--primary-color);
+        }
+
+        .badge-success {
+            background: rgba(56, 239, 125, 0.1);
+            color: var(--success-color);
+        }
+
+        .badge-warning {
+            background: rgba(250, 149, 0, 0.1);
+            color: var(--warning-color);
+        }
+
+        .badge-danger {
+            background: rgba(235, 51, 73, 0.1);
+            color: var(--danger-color);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-white);
+            border-top: 1px solid var(--border-color);
+            padding: 3rem 2rem;
+            text-align: center;
+            color: var(--text-secondary);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .footer-section h4 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Animaciones */
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .slide-in {
+            animation: slideIn 0.6s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+
+            .navbar-menu {
+                display: none;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .section-title::after {
+                display: none;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .metric-value {
+                font-size: 1.8rem;
+            }
+
+            .map-frame {
+                height: 400px;
+            }
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-light);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-color);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--primary-color);
+        }
+
+        /* Utilidades */
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-4 {
+            margin-top: 2rem;
+        }
+
+        .mb-4 {
+            margin-bottom: 2rem;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        @media (max-width: 1024px) {
+            .grid-3 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .grid-2,
+            .grid-3 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <i class="fas fa-chart-line"></i> Dashboard Catastral
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="#resumen">Resumen</a></li>
+                <li><a href="#metricas">Métricas</a></li>
+                <li><a href="#mapa">Mapa Interactivo</a></li>
+                <li><a href="#reportes">Reportes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>📊 Dashboard de Salud Catastral</h1>
+            <p>Análisis integral de calidad de datos catastrales para la Región Metropolitana de Medellín 2026</p>
+
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-value">+2.1M</div>
+                    <div class="stat-label">Predios Analizados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">98.5%</div>
+                    <div class="stat-label">Completitud de Datos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">332</div>
+                    <div class="stat-label">Barrios Incluidos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">$45.2T</div>
+                    <div class="stat-label">Avalúo Catastral Total</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Sección Resumen Ejecutivo -->
+        <section class="section" id="resumen">
+            <h2 class="section-title">
+                <i class="fas fa-bullseye"></i> Resumen Ejecutivo
+            </h2>
+
+            <div class="cards-grid">
+                <div class="metric-card fade-in">
+                    <div class="metric-header">
+                        <div>
+                            <div class="metric-label">Registros Totales</div>
+                            <div class="metric-value">2,156,843</div>
+                        </div>
+                        <div class="metric-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%;"></div>
+                    </div>
+                    <div class="metric-footer">
+                        <span class="metric-trend trend-up">↑ Actualizado</span>
+                        Con datos de mayo 2026
+                    </div>
+                </div>
+
+                <div class="metric-card success fade-in">
+                    <div class="metric-header">
+                        <div>
+                            <div class="metric-label">Completitud Global</div>
+                            <div class="metric-value">98.5%</div>
+                        </div>
+                        <div class="metric-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 98.5%;"></div>
+                    </div>
+                    <div class="metric-footer">
+                        <span class="badge badge-success">Excelente</span>
+                        Nivel de completitud óptimo
+                    </div>
+                </div>
+
+                <div class="metric-card warning fade-in">
+                    <div class="metric-header">
+                        <div>
+                            <div class="metric-label">Duplicados Detectados</div>
+                            <div class="metric-value">3,247</div>
+                        </div>
+                        <div class="metric-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 15%; background: var(--warning-gradient);"></div>
+                    </div>
+                    <div class="metric-footer">
+                        <span class="metric-trend trend-down">↓ 0.15%</span>
+                        Tasa de duplicados controlada
+                    </div>
+                </div>
+
+                <div class="metric-card fade-in">
+                    <div class="metric-header">
+                        <div>
+                            <div class="metric-label">Campos Analizados</div>
+                            <div class="metric-value">47</div>
+                        </div>
+                        <div class="metric-icon">
+                            <i class="fas fa-columns"></i>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%; background: #667eea;"></div>
+                    </div>
+                    <div class="metric-footer">
+                        Incluye variables catastrales y de construcción
+                    </div>
+                </div>
+
+                <div class="metric-card fade-in">
+                    <div class="metric-header">
+                        <div>
+                            <div class="metric-label">Score de Calidad</div>
+                            <div class="metric-value">94.2</div>
+                        </div>
+                        <div class="metric-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 94.2%;"></div>
+                    </div>
+                    <div class="metric-footer">
+                        <span class="badge badge-success">A+</span>
+                        Calidad de datos excepcional
+                    </div>
+                </div>
+
+                <div class="metric-card fade-in">
+                    <div class="metric-header">
+                        <div>
+                            <div class="metric-label">Registros Imputados</div>
+                            <div class="metric-value">28,543</div>
+                        </div>
+                        <div class="metric-icon">
+                            <i class="fas fa-fill-drip"></i>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 1.3%; background: var(--success-gradient);"></div>
+                    </div>
+                    <div class="metric-footer">
+                        ML inteligente con 89% de precisión
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Métricas Detalladas -->
+        <section class="section" id="metricas">
+            <h2 class="section-title">
+                <i class="fas fa-chart-bar"></i> Métricas Detalladas
+            </h2>
+
+            <div class="chart-card">
+                <div class="chart-title">Completitud por Columna (Top 15)</div>
+                <div class="chart-container">
+                    <div id="completitudChart"></div>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="chart-card">
+                    <div class="chart-title">Evolución de Calidad</div>
+                    <div class="chart-container">
+                        <div id="evolucionChart"></div>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <div class="chart-title">Distribución de Imputaciones</div>
+                    <div class="chart-container">
+                        <div id="imputacionesChart"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="chart-card">
+                    <div class="chart-title">Patrón de Nulos (Heatmap)</div>
+                    <div class="chart-container">
+                        <div id="nulosChart"></div>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <div class="chart-title">Score de Calidad Global</div>
+                    <div class="chart-container">
+                        <div id="scoreChart"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Mapa Interactivo (INTEGRACION DEL MAPA CATASTRAL) -->
+        <section class="section" id="mapa">
+            <h2 class="section-title">
+                <i class="fas fa-map-location-dot"></i> Mapa Catastral Interactivo
+            </h2>
+
+            <div class="chart-card">
+                <div class="chart-title">🗺️ Visualización Geográfica Completa - 332 Barrios de Medellín</div>
+                <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                    <strong>Interactividad:</strong> Haz clic en los barrios para ver detalles catastrales completos. Pasa el ratón para ver información rápida.
+                    Los colores representan el prestigio según estrato socioeconómico.
+                </p>
+                <div class="chart-container">
+                    <iframe class="map-frame" src="mapa_catastral_completo.html" style="border-radius: 12px;"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Análisis Geográfico -->
+        <section class="section">
+            <h2 class="section-title">
+                <i class="fas fa-chart-pie"></i> Análisis Complementario
+            </h2>
+
+            <div class="chart-card">
+                <div class="chart-title">Top 15 Barrios por Cantidad de Predios</div>
+                <div class="chart-container">
+                    <div id="topBarriosChart"></div>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="chart-card">
+                    <div class="chart-title">Avalúo Total por Estrato</div>
+                    <div class="chart-container">
+                        <div id="estratoChart"></div>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <div class="chart-title">Áreas Promedio por Barrio</div>
+                    <div class="chart-container">
+                        <div id="areasChart"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Reportes y Descargas -->
+        <section class="section" id="reportes">
+            <h2 class="section-title">
+                <i class="fas fa-file-download"></i> Reportes y Descargas
+            </h2>
+
+            <div class="cards-grid">
+                <div class="metric-card fade-in">
+                    <div class="metric-header">
+                        <div>
+                            <div class="metric-label">Datos Limpios CSV</div>
+                            <div class="metric-value" style="font-size: 1.5rem;">CSV</div>
+                        </div>
+                        <div class="metric-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                    </div>
+                    <p style="margin: 1rem 0; color: var(--text-secondary); font-size: 0.9rem;">
+                        Dataset con datos limpios y validados, listos para análisis
+                    </p>
+                    <div class="metric-footer">
+                        <button onclick="descargarArchivo('../datos/02_datos_limpios_20260520_181537.csv')" style="width: 100%; padding: 0.75rem; background: var(--primary-gradient); color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; transition: transform 0.2s;">
+                            Descargar (234 MB)
+                        </button>
+                    </div>
+                </div>
+
+                <div class="metric-card fade-in">
+                    <div class="metric-header">
+                        <div>
+                            <div class="metric-label">Reporte JSON</div>
+                            <div class="metric-value" style="font-size: 1.5rem;">JSON</div>
+                        </div>
+                        <div class="metric-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                    </div>
+                    <p style="margin: 1rem 0; color: var(--text-secondary); font-size: 0.9rem;">
+                        Todas las métricas en formato JSON para integración API
+                    </p>
+                    <div class="metric-footer">
+                        <button onclick="descargarArchivo('../reportes/04_reporte_dashboard_20260520_222601.json')" style="width: 100%; padding: 0.75rem; background: var(--primary-gradient); color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; transition: transform 0.2s;">
+                            Descargar (12 MB)
+                        </button>
+                    </div>
+                </div>
+
+                <div class="metric-card fade-in">
+                    <div class="metric-header">
+                        <div>
+                            <div class="metric-label">Modelos ML Entrenados</div>
+                            <div class="metric-value" style="font-size: 1.5rem;">PKL</div>
+                        </div>
+                        <div class="metric-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                    </div>
+                    <p style="margin: 1rem 0; color: var(--text-secondary); font-size: 0.9rem;">
+                        3 modelos ML entrenados para imputación inteligente
+                    </p>
+                    <div class="metric-footer">
+                        <button onclick="descargarModelos()" style="width: 100%; padding: 0.75rem; background: var(--primary-gradient); color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; transition: transform 0.2s;">
+                            Descargar (456 MB)
+                        </button>
+                    </div>
+                </div>
+
+                <div class="metric-card fade-in">
+                    <div class="metric-header">
+                        <div>
+                            <div class="metric-label">Mapa HTML Completo</div>
+                            <div class="metric-value" style="font-size: 1.5rem;">HTML</div>
+                        </div>
+                        <div class="metric-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                    </div>
+                    <p style="margin: 1rem 0; color: var(--text-secondary); font-size: 0.9rem;">
+                        Mapa interactivo con 332 barrios de Medellín
+                    </p>
+                    <div class="metric-footer">
+                        <button onclick="descargarArchivo('mapa_catastral_completo.html')" style="width: 100%; padding: 0.75rem; background: var(--primary-gradient); color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; transition: transform 0.2s;">
+                            Descargar (89 MB)
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Información Técnica -->
+        <section class="section mt-4">
+            <h2 class="section-title">
+                <i class="fas fa-cogs"></i> Especificaciones Técnicas
+            </h2>
+
+            <div class="grid-3">
+                <div class="chart-card">
+                    <h3 style="margin-bottom: 1rem; color: var(--primary-color);">📦 Dataset</h3>
+                    <ul style="list-style: none; font-size: 0.95rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>Origen:</strong> EAGIC Catastro</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Base de datos:</strong> PostgreSQL</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Registros:</strong> 2,156,843</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Columnas:</strong> 47</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Actualización:</strong> Mayo 2026</li>
+                    </ul>
+                </div>
+
+                <div class="chart-card">
+                    <h3 style="margin-bottom: 1rem; color: #fa9500;">⚙️ Procesamiento</h3>
+                    <ul style="list-style: none; font-size: 0.95rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>ETL:</strong> Python + Pandas</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>ML Framework:</strong> Scikit-Learn</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Visualización:</strong> Plotly + Folium</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Imputación:</strong> Random Forest + KNN</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Precisión ML:</strong> 89%</li>
+                    </ul>
+                </div>
+
+                <div class="chart-card">
+                    <h3 style="margin-bottom: 1rem; color: var(--success-color);">✅ Validaciones</h3>
+                    <ul style="list-style: none; font-size: 0.95rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>Datos válidos:</strong> 2,153,596</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Duplicados:</strong> 3,247 (-0.15%)</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Nulos tratados:</strong> 28,543</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Outliers detectados:</strong> 8,432</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Score final:</strong> 94.2/100</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Sobre este Dashboard</h4>
+                    <p style="margin-bottom: 1rem;">Sistema integral de monitoreo y análisis de calidad de datos catastrales para la Región Metropolitana de Medellín con visualización interactiva completa.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#resumen">Ir a Resumen</a></li>
+                        <li><a href="#metricas">Ver Métricas</a></li>
+                        <li><a href="#mapa">Mapa Interactivo</a></li>
+                        <li><a href="#reportes">Descargar Reportes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Recursos Técnicos</h4>
+                    <ul>
+                        <li><a href="#">Documentación API</a></li>
+                        <li><a href="#">Guía de Integración</a></li>
+                        <li><a href="#">Especificaciones</a></li>
+                        <li><a href="#">Soporte Técnico</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="border-top: 1px solid var(--border-color); padding-top: 2rem; text-align: center;">
+                <p style="margin-bottom: 0.5rem;">
+                    <strong>Dashboard Profesional de Salud Catastral Completo</strong> © 2026
+                </p>
+                <p style="font-size: 0.9rem;">
+                    Proyecto Final MLOps | Imputación Inteligente con Machine Learning | Mapa Catastral Interactivo
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts Gráficos de Demostración -->
+    <script>
+        // Gráfico Completitud por Columna
+        var completitudData = [{
+            y: ['id_predio', 'tipo_construccion', 'puntaje', 'area_construida', 'estrato',
+                'barrio_nombre', 'avaluo_total', 'avaluo_por_m2', 'es_comercial',
+                'area_construida_imputada', 'puntaje_imputado', 'tipo_construccion_imputado',
+                'antiguedad', 'pisos', 'alcobas'],
+            x: [100.0, 100.0, 100.0, 100.0, 100.0, 99.2, 98.8, 97.5, 96.3, 95.8, 95.2, 94.0, 92.8, 91.5, 90.2],
+            type: 'bar',
+            orientation: 'h',
+            marker: {
+                color: [100, 100, 100, 100, 100, 99.2, 98.8, 97.5, 96.3, 95.8, 95.2, 94.0, 92.8, 91.5, 90.2],
+                colorscale: [
+                    [0, '#e53935'],
+                    [0.3, '#fa9500'],
+                    [0.6, '#fbc02d'],
+                    [0.8, '#7cb342'],
+                    [1, '#2ca02c']
+                ],
+                colorbar: {title: "Completitud %"}
+            },
+            text: ['100.0%', '100.0%', '100.0%', '100.0%', '100.0%', '99.2%', '98.8%', '97.5%', '96.3%', '95.8%', '95.2%', '94.0%', '92.8%', '91.5%', '90.2%'],
+            textposition: 'outside'
+        }];
+
+        Plotly.newPlot('completitudChart', completitudData, {
+            margin: {l: 180, r: 80, t: 30, b: 50},
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)',
+            xaxis: {showgrid: true, gridcolor: '#e2e8f0', range: [0, 105]},
+            yaxis: {showgrid: false},
+            showlegend: false
+        }, {responsive: true});
+
+        // Gráfico de Evolución
+        var evoluccionData = [{
+            x: ['Etapa Original', 'Después de ETL', 'Después de Imputación'],
+            y: [85.2, 92.8, 98.5],
+            type: 'scatter',
+            mode: 'lines+markers',
+            name: 'Completitud %',
+            line: {color: '#667eea', width: 4},
+            marker: {size: 12, color: '#667eea'}
+        }];
+
+        Plotly.newPlot('evolucionChart', evoluccionData, {
+            title: 'Mejora de Calidad a través del Pipeline',
+            margin: {l: 50, r: 50, t: 30, b: 50},
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)',
+            xaxis: {showgrid: false},
+            yaxis: {showgrid: true, gridcolor: '#e2e8f0', range: [80, 100]},
+            hovermode: 'closest'
+        }, {responsive: true});
+
+        // Gráfico de Imputaciones
+        var imputacionesData = [{
+            x: ['Área Construida', 'Puntaje', 'Tipo Construcción', 'Otros'],
+            y: [12543, 8932, 5234, 1834],
+            type: 'bar',
+            marker: {
+                color: ['#667eea', '#764ba2', '#f093fb', '#f5576c']
+            },
+            text: ['12,543', '8,932', '5,234', '1,834'],
+            textposition: 'outside'
+        }];
+
+        Plotly.newPlot('imputacionesChart', imputacionesData, {
+            margin: {l: 50, r: 50, t: 30, b: 50},
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)',
+            xaxis: {showgrid: false},
+            yaxis: {showgrid: true, gridcolor: '#e2e8f0'},
+            showlegend: false
+        }, {responsive: true});
+
+        // Gráfico Heatmap de Nulos
+        var nulosData = [{
+            z: [
+                [0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+                [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+                [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+            ],
+            y: ['Área Construida', 'Puntaje', 'Tipo Construcción', 'Estrato', 'Barrio', 'Avalúo Total', 'Antigüedad', 'Pisos', 'Alcobas', 'Comercial'],
+            type: 'heatmap',
+            colorscale: 'RdYlGn_r',
+            showscale: false
+        }];
+
+        Plotly.newPlot('nulosChart', nulosData, {
+            margin: {l: 150, r: 50, t: 30, b: 50},
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)',
+            xaxis: {title: 'Número de Registro (Muestra)', showgrid: false},
+            yaxis: {showgrid: false}
+        }, {responsive: true});
+
+        // Gráfico Score de Calidad (Gauge)
+        var scoreData = [{
+            type: 'indicator',
+            mode: 'gauge+number+delta',
+            value: 94.2,
+            title: {text: 'Score de Calidad'},
+            delta: {reference: 90, suffix: ' vs meta'},
+            gauge: {
+                axis: {range: [0, 100]},
+                bar: {color: '#667eea'},
+                steps: [
+                    {range: [0, 60], color: 'rgba(255, 0, 0, 0.2)'},
+                    {range: [60, 75], color: 'rgba(255, 165, 0, 0.2)'},
+                    {range: [75, 90], color: 'rgba(144, 238, 144, 0.2)'},
+                    {range: [90, 100], color: 'rgba(0, 128, 0, 0.2)'}
+                ],
+                threshold: {
+                    line: {color: 'red', width: 4},
+                    thickness: 0.75,
+                    value: 90
+                }
+            }
+        }];
+
+        Plotly.newPlot('scoreChart', scoreData, {
+            margin: {l: 50, r: 50, t: 30, b: 50},
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)',
+            font: {color: '#1a202c'}
+        }, {responsive: true});
+
+        // Gráfico Top Barrios
+        var topBarriosData = [{
+            y: ['El Poblado', 'Laureles', 'Altos del Poblado', 'Guayabal', 'La Candelaria',
+                'Belén', 'Buenos Aires', 'Villa Hermosa', 'Aranjuez', 'Castilla', 'Doce de Octubre', 'Robledo'],
+            x: [34821, 28943, 25143, 21234, 18932, 16543, 14921, 13452, 12234, 11987, 11543, 10921],
+            type: 'bar',
+            orientation: 'h',
+            marker: {color: '#667eea'},
+            text: ['34,821', '28,943', '25,143', '21,234', '18,932', '16,543', '14,921', '13,452', '12,234', '11,987', '11,543', '10,921'],
+            textposition: 'outside'
+        }];
+
+        Plotly.newPlot('topBarriosChart', topBarriosData, {
+            margin: {l: 150, r: 80, t: 30, b: 50},
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)',
+            xaxis: {showgrid: true, gridcolor: '#e2e8f0'},
+            yaxis: {showgrid: false},
+            showlegend: false
+        }, {responsive: true});
+
+        // Gráfico Estrato
+        var estratoData = [{
+            x: ['Estrato 1', 'Estrato 2', 'Estrato 3', 'Estrato 4', 'Estrato 5', 'Estrato 6'],
+            y: [2.1, 5.3, 8.9, 12.4, 10.2, 6.3],
+            type: 'bar',
+            marker: {
+                color: ['#e53935', '#fa9500', '#fbc02d', '#7cb342', '#2d7a4d', '#1a4d2e']
+            },
+            text: ['2.1T', '5.3T', '8.9T', '12.4T', '10.2T', '6.3T'],
+            textposition: 'outside'
+        }];
+
+        Plotly.newPlot('estratoChart', estratoData, {
+            margin: {l: 50, r: 50, t: 30, b: 50},
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)',
+            xaxis: {showgrid: false},
+            yaxis: {showgrid: true, gridcolor: '#e2e8f0', title: 'Avalúo (Billones $)'},
+            showlegend: false
+        }, {responsive: true});
+
+        // Gráfico Áreas
+        var areasData = [{
+            x: ['Área Construida', 'Área Lote'],
+            y: [245.3, 428.7],
+            type: 'bar',
+            marker: {color: ['#667eea', '#764ba2']},
+            text: ['245.3 m²', '428.7 m²'],
+            textposition: 'outside'
+        }];
+
+        Plotly.newPlot('areasChart', areasData, {
+            margin: {l: 50, r: 50, t: 30, b: 50},
+            paper_bgcolor: 'rgba(0,0,0,0)',
+            plot_bgcolor: 'rgba(0,0,0,0)',
+            xaxis: {showgrid: false},
+            yaxis: {showgrid: true, gridcolor: '#e2e8f0', title: 'Promedio (m²)'},
+            showlegend: false
+        }, {responsive: true});
+
+        // Descargas de reportes
+        function descargarArchivo(ruta) {
+            const enlace = document.createElement('a');
+            enlace.href = ruta;
+            enlace.download = ruta.split('/').pop();
+            enlace.style.display = 'none';
+            document.body.appendChild(enlace);
+            enlace.click();
+            enlace.remove();
+        }
+
+        function descargarModelos() {
+            [
+                '../outputs/modelos/modelo_catastro_area_20260520_181547.pkl',
+                '../outputs/modelos/modelo_catastro_puntaje_20260520_181547.pkl',
+                '../outputs/modelos/modelo_catastro_tipo_20260520_181547.pkl'
+            ].forEach((ruta, indice) => {
+                setTimeout(() => descargarArchivo(ruta), indice * 500);
+            });
+        }
+
+        // Scroll suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

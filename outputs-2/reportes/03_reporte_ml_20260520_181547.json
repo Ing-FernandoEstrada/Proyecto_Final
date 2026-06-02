@@ -1,0 +1,95 @@
+{
+  "timestamp": "20260520_181547",
+  "dataset": "EAGIC_Catastro",
+  "modelos": {
+    "area_construida": {
+      "modelo_seleccionado": "RandomForest",
+      "criterio_seleccion": "cv_r2_mean",
+      "todos_modelos": {
+        "RandomForest": {
+          "cv_r2": 0.42457786311980295,
+          "cv_r2_std": 0.13021892595174245,
+          "test_r2": 0.413853442414138,
+          "test_mae": 20.241217797204254,
+          "test_rmse": 198.53076485367754
+        },
+        "GradientBoosting": {
+          "cv_r2": 0.22661661848150177,
+          "cv_r2_std": 0.24017559496953667,
+          "test_r2": 0.43791074009201447,
+          "test_mae": 24.234766452613332,
+          "test_rmse": 194.41391678584964
+        },
+        "Ridge": {
+          "cv_r2": 0.3673777953242186,
+          "cv_r2_std": 0.10973294449312235,
+          "test_r2": -1.3530990273303427,
+          "test_mae": 38.45727019135818,
+          "test_rmse": 397.78170829587486
+        }
+      },
+      "metricas_mejor": {
+        "cv_r2": 0.42457786311980295,
+        "cv_r2_std": 0.13021892595174245,
+        "r2": 0.413853442414138,
+        "mae": 20.241217797204254,
+        "rmse": 198.53076485367754
+      }
+    },
+    "puntaje": {
+      "modelo_seleccionado": "RandomForest",
+      "criterio_seleccion": "cv_r2_mean",
+      "todos_modelos": {
+        "RandomForest": {
+          "cv_r2": 0.8592739709305846,
+          "cv_r2_std": 0.0009468995043372399,
+          "test_r2": 0.8604469238551744,
+          "test_mae": 4.39705612977056,
+          "test_rmse": 6.896631968560286
+        },
+        "GradientBoosting": {
+          "cv_r2": 0.8162190658997284,
+          "cv_r2_std": 0.0004899702278470503,
+          "test_r2": 0.8159788043222825,
+          "test_mae": 5.53438543656342,
+          "test_rmse": 7.9195639131924915
+        },
+        "Ridge": {
+          "cv_r2": 0.5886715470137724,
+          "cv_r2_std": 0.002354732260446593,
+          "test_r2": 0.5866349912469608,
+          "test_mae": 8.615805532298426,
+          "test_rmse": 11.869548501359853
+        }
+      },
+      "metricas_mejor": {
+        "cv_r2": 0.8592739709305846,
+        "cv_r2_std": 0.0009468995043372399,
+        "r2": 0.8604469238551744,
+        "mae": 4.39705612977056,
+        "rmse": 6.896631968560286
+      }
+    },
+    "tipo_construccion": {
+      "modelo_seleccionado": "GradientBoosting",
+      "criterio_seleccion": "cv_acc_mean",
+      "todos_modelos": {
+        "RandomForest": {
+          "cv_acc": 0.9389333784574649,
+          "cv_acc_std": 0.0005476025638753861,
+          "test_acc": 0.9387007077856421
+        },
+        "GradientBoosting": {
+          "cv_acc": 0.946780138107628,
+          "cv_acc_std": 0.0003776662484682762,
+          "test_acc": 0.9465743549413923
+        }
+      },
+      "metricas_mejor": {
+        "cv_acc": 0.946780138107628,
+        "cv_acc_std": 0.0003776662484682762,
+        "accuracy": 0.9465743549413923
+      }
+    }
+  }
+}

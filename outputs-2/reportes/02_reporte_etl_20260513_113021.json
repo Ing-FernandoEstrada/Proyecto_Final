@@ -1,0 +1,196 @@
+{
+  "timestamp": "20260513_113021",
+  "dataset": "EAGIC_Catastro",
+  "etapas": {
+    "esquema": {
+      "nombre": "Validación de esquema",
+      "validaciones": [
+        {
+          "columna": "id_predio",
+          "tipo_esperado": "int64",
+          "tipo_actual": "str",
+          "estado": "TIPO_INCORRECTO"
+        },
+        {
+          "columna": "estrato",
+          "tipo_esperado": "object",
+          "tipo_actual": "int64",
+          "estado": "TIPO_INCORRECTO"
+        },
+        {
+          "columna": "barrio_nombre",
+          "tipo_esperado": "object",
+          "tipo_actual": "str",
+          "estado": "TIPO_INCORRECTO"
+        },
+        {
+          "columna": "avaluo_total",
+          "tipo_esperado": "float64",
+          "tipo_actual": "float64",
+          "estado": "OK"
+        },
+        {
+          "columna": "area_construida",
+          "tipo_esperado": "float64",
+          "tipo_actual": "float64",
+          "estado": "OK"
+        },
+        {
+          "columna": "puntaje",
+          "tipo_esperado": "float64",
+          "tipo_actual": "float64",
+          "estado": "OK"
+        },
+        {
+          "columna": "tipo_construccion",
+          "tipo_esperado": "object",
+          "tipo_actual": "str",
+          "estado": "TIPO_INCORRECTO"
+        }
+      ]
+    },
+    "tipos": {
+      "nombre": "Estandarización de tipos",
+      "conversiones": [
+        {
+          "columna": "estrato",
+          "tipo_antes": "int64",
+          "tipo_despues": "str",
+          "estado": "OK"
+        },
+        {
+          "columna": "barrio_nombre",
+          "tipo_antes": "str",
+          "tipo_despues": "str",
+          "estado": "OK"
+        },
+        {
+          "columna": "tipo_construccion",
+          "tipo_antes": "str",
+          "tipo_despues": "str",
+          "estado": "OK"
+        },
+        {
+          "columna": "avaluo_total",
+          "tipo_antes": "float64",
+          "tipo_despues": "float64",
+          "estado": "OK"
+        },
+        {
+          "columna": "area_construida",
+          "tipo_antes": "float64",
+          "tipo_despues": "float64",
+          "estado": "OK"
+        },
+        {
+          "columna": "puntaje",
+          "tipo_antes": "float64",
+          "tipo_despues": "float64",
+          "estado": "OK"
+        }
+      ]
+    },
+    "duplicados": {
+      "nombre": "Eliminación de duplicados",
+      "duplicados_exactos": 69,
+      "registros_eliminados": 69,
+      "registros_antes": 1154823,
+      "registros_despues": 1154754
+    },
+    "pk": {
+      "nombre": "Validación PK: id_predio",
+      "registros_totales": 1154754,
+      "nulos_pk": 0,
+      "valores_unicos": 1116073,
+      "duplicados_pk": 71605,
+      "estado": "DUPLICADOS_CORREGIDOS"
+    },
+    "numericos": {
+      "nombre": "Limpieza de numéricos",
+      "reglas_aplicadas": [
+        {
+          "regla": "avaluo_total > 0",
+          "registros_eliminados": 5
+        },
+        {
+          "regla": "puntaje en [0, 100]",
+          "registros_convertidos_nan": 1
+        },
+        {
+          "regla": "area_construida = 0",
+          "registros_detectados": 2629,
+          "accion": "Marcados para imputación"
+        }
+      ]
+    },
+    "categoricas": {
+      "nombre": "Estandarización de categóricas",
+      "transformaciones": [
+        {
+          "columna": "estrato",
+          "valores_unicos_antes": 7,
+          "valores_unicos_despues": 7,
+          "acciones": [
+            "strip",
+            "lower"
+          ]
+        },
+        {
+          "columna": "barrio_nombre",
+          "valores_unicos_antes": 350,
+          "valores_unicos_despues": 350,
+          "acciones": [
+            "strip",
+            "lower"
+          ]
+        },
+        {
+          "columna": "tipo_construccion",
+          "valores_unicos_antes": 6,
+          "valores_unicos_despues": 5,
+          "acciones": [
+            "strip",
+            "lower"
+          ]
+        }
+      ]
+    },
+    "features": {
+      "nombre": "Features derivadas",
+      "features_creadas": [
+        {
+          "nombre": "es_comercial",
+          "descripcion": "Indicador si estrato = 0 (comercial)",
+          "tipo": "int"
+        },
+        {
+          "nombre": "avaluo_por_m2",
+          "descripcion": "Avalúo dividido por área construida",
+          "tipo": "float"
+        },
+        {
+          "nombre": "area_construida_imputada",
+          "descripcion": "Flag de imputación"
+        },
+        {
+          "nombre": "puntaje_imputado",
+          "descripcion": "Flag de imputación"
+        },
+        {
+          "nombre": "tipo_construccion_imputado",
+          "descripcion": "Flag de imputación"
+        }
+      ]
+    },
+    "resumen": {
+      "nombre": "Resumen general",
+      "registros_inicial": 1154823,
+      "registros_final": 1116068,
+      "registros_eliminados": 38755,
+      "porcentaje_retencion": 96.64,
+      "columnas_final": 12,
+      "nulos_finales": 194434,
+      "duplicados_finales": 0
+    }
+  }
+}

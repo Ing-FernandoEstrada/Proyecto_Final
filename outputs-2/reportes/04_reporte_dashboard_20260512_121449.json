@@ -1,0 +1,23 @@
+{
+  "timestamp": "20260512_121449",
+  "dataset": "EAGIC_Catastro",
+  "registros": 94507,
+  "columnas": 12,
+  "nulos_totales": 3940,
+  "duplicados": 0,
+  "completitud": 99.65,
+  "columnas_completitud": {
+    "id_predio": 100.0,
+    "estrato": 100.0,
+    "barrio_nombre": 100.0,
+    "avaluo_total": 100.0,
+    "area_construida": 100.0,
+    "puntaje": 100.0,
+    "tipo_construccion": 100.0,
+    "es_comercial": 100.0,
+    "avaluo_por_m2": 95.83,
+    "area_construida_imputada": 100.0,
+    "puntaje_imputado": 100.0,
+    "tipo_construccion_imputado": 100.0
+  }
+}

@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_25fd33ba193529526cc8f15b4c21ed81 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+    <div style="position: fixed;
+                bottom: 50px; right: 50px; width: 280px; height: 350px;
+                background-color: white; border:2px solid grey; z-index:9999;
+                font-size:13px; padding: 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
+
+        <h3 style="margin: 0 0 15px 0; color: #1a3a52; border-bottom: 2px solid #333; padding-bottom: 8px;">
+            CLASIFICACION POR PRESTIGIO
+        </h3>
+
+        <div style="margin-bottom: 12px;">
+            <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                <div style="width: 20px; height: 20px; background: #1a4d2e; border-radius: 3px; margin-right: 10px;"></div>
+                <span><b>PREMIUM</b> (Estrato 5-6)</span>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 12px;">
+            <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                <div style="width: 20px; height: 20px; background: #2d7a4d; border-radius: 3px; margin-right: 10px;"></div>
+                <span><b>ALTO</b> (Estrato 4)</span>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 12px;">
+            <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                <div style="width: 20px; height: 20px; background: #90ee90; border-radius: 3px; margin-right: 10px;"></div>
+                <span><b>MEDIO ALTO</b> (Estrato 3)</span>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 12px;">
+            <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                <div style="width: 20px; height: 20px; background: #fff700; border-radius: 3px; margin-right: 10px;"></div>
+                <span><b>MEDIO</b> (Estrato 2)</span>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 12px;">
+            <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                <div style="width: 20px; height: 20px; background: #ff6b6b; border-radius: 3px; margin-right: 10px;"></div>
+                <span><b>BAJO</b> (Estrato 1)</span>
+            </div>
+        </div>
+
+        <div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid #ddd; font-size: 11px; color: #666;">
+            <p style="margin: 5px 0;"><i>Tamaño del circulo = cantidad de predios</i></p>
+            <p style="margin: 5px 0;"><i>Haz click en los circulos para ver detalles</i></p>
+        </div>
+    </div>
+    
+    
+            <div class="folium-map" id="map_25fd33ba193529526cc8f15b4c21ed81" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_25fd33ba193529526cc8f15b4c21ed81 = L.map(
+                "map_25fd33ba193529526cc8f15b4c21ed81",
+                {
+                    center: [6.2442, -75.5812],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c7c2d4428b06d7f0a7a299484fc00d96 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c7c2d4428b06d7f0a7a299484fc00d96.addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+            var circle_a08330051b58691244c95c9677c77682 = L.circle(
+                [6.187753420727655, -75.59225716889243],
+                {"bubblingMouseEvents": true, "color": "#1a4d2e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a4d2e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000.0, "stroke": true, "weight": 2}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+        var popup_930a1319147f297d25c49b045b19e929 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a0bd70d6f7a7e264e45e5d505f7352af = $(`<div id="html_a0bd70d6f7a7e264e45e5d505f7352af" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #1a4d2e; padding-bottom: 5px;">                 EL POBLADO             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>PREMIUM</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>6/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$450,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>1,498</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Centro Oriente</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_930a1319147f297d25c49b045b19e929.setContent(html_a0bd70d6f7a7e264e45e5d505f7352af);
+            
+        
+
+        circle_a08330051b58691244c95c9677c77682.bindPopup(popup_930a1319147f297d25c49b045b19e929)
+        ;
+
+        
+    
+    
+            circle_a08330051b58691244c95c9677c77682.bindTooltip(
+                `<div>
+                     <b>El Poblado</b><br>Prestigio: PREMIUM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_859484b72cd8ec46f1ae97933b5be713 = L.marker(
+                [6.187753420727655, -75.59225716889243],
+                {
+}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+            var icon_24005fe5db92178f244b6fc75becbb04 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "white",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2bda44eb8bf34c7b1eb1688f63a44a8e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_992964b4974cc423c32b9d304d0768b9 = $(`<div id="html_992964b4974cc423c32b9d304d0768b9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #1a4d2e; padding-bottom: 5px;">                 EL POBLADO             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>PREMIUM</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>6/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$450,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>1,498</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Centro Oriente</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_2bda44eb8bf34c7b1eb1688f63a44a8e.setContent(html_992964b4974cc423c32b9d304d0768b9);
+            
+        
+
+        marker_859484b72cd8ec46f1ae97933b5be713.bindPopup(popup_2bda44eb8bf34c7b1eb1688f63a44a8e)
+        ;
+
+        
+    
+    
+                marker_859484b72cd8ec46f1ae97933b5be713.setIcon(icon_24005fe5db92178f244b6fc75becbb04);
+            
+    
+            var circle_6036dbe3cae04d1bb8140dcc31fa222a = L.circle(
+                [6.244613577426222, -75.5761092971725],
+                {"bubblingMouseEvents": true, "color": "#1a4d2e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a4d2e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 840.8544726301735, "stroke": true, "weight": 2}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+        var popup_f7b24d6a2adeeddeac092e769f14d21f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4f4cad1ad12e55733f46d1b972a1e206 = $(`<div id="html_4f4cad1ad12e55733f46d1b972a1e206" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #1a4d2e; padding-bottom: 5px;">                 LAURELES             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>PREMIUM</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>5/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$350,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>1,200</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Centro</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_f7b24d6a2adeeddeac092e769f14d21f.setContent(html_4f4cad1ad12e55733f46d1b972a1e206);
+            
+        
+
+        circle_6036dbe3cae04d1bb8140dcc31fa222a.bindPopup(popup_f7b24d6a2adeeddeac092e769f14d21f)
+        ;
+
+        
+    
+    
+            circle_6036dbe3cae04d1bb8140dcc31fa222a.bindTooltip(
+                `<div>
+                     <b>Laureles</b><br>Prestigio: PREMIUM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4bee0cd20b0808c5bed1c54f0177dff8 = L.marker(
+                [6.244613577426222, -75.5761092971725],
+                {
+}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+            var icon_c49d5d33d0b47466cc80459a03f5f3e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "white",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09aa44129b706b896a96f30820f15edc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aa0e0bcfe1ba63682933a287bc01a3dd = $(`<div id="html_aa0e0bcfe1ba63682933a287bc01a3dd" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #1a4d2e; padding-bottom: 5px;">                 LAURELES             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>PREMIUM</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>5/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$350,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>1,200</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Centro</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_09aa44129b706b896a96f30820f15edc.setContent(html_aa0e0bcfe1ba63682933a287bc01a3dd);
+            
+        
+
+        marker_4bee0cd20b0808c5bed1c54f0177dff8.bindPopup(popup_09aa44129b706b896a96f30820f15edc)
+        ;
+
+        
+    
+    
+                marker_4bee0cd20b0808c5bed1c54f0177dff8.setIcon(icon_c49d5d33d0b47466cc80459a03f5f3e8);
+            
+    
+            var circle_be381e21ac146ed8ba757ba8ef01b071 = L.circle(
+                [6.253810159247503, -75.57429073711256],
+                {"bubblingMouseEvents": true, "color": "#2d7a4d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d7a4d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 881.4419225634178, "stroke": true, "weight": 2}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+        var popup_dfd7da48a70682eb1edaa27e46b865fa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b0481f48aa5a174e0dbbfea91f872369 = $(`<div id="html_b0481f48aa5a174e0dbbfea91f872369" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #2d7a4d; padding-bottom: 5px;">                 LA CANDELARIA             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>ALTO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>4/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$280,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>1,276</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Centro</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_dfd7da48a70682eb1edaa27e46b865fa.setContent(html_b0481f48aa5a174e0dbbfea91f872369);
+            
+        
+
+        circle_be381e21ac146ed8ba757ba8ef01b071.bindPopup(popup_dfd7da48a70682eb1edaa27e46b865fa)
+        ;
+
+        
+    
+    
+            circle_be381e21ac146ed8ba757ba8ef01b071.bindTooltip(
+                `<div>
+                     <b>La Candelaria</b><br>Prestigio: ALTO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8bbea92acda07e2c3e1ea7f95e5e4e44 = L.marker(
+                [6.253810159247503, -75.57429073711256],
+                {
+}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+            var icon_6bb5ad84f93a9b51acd0476507cd6a37 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "white",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11b8f37cc0c384f1b167c12ec6494cf9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb4b054af5c75b3365d6643ae6ca52b2 = $(`<div id="html_eb4b054af5c75b3365d6643ae6ca52b2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #2d7a4d; padding-bottom: 5px;">                 LA CANDELARIA             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>ALTO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>4/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$280,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>1,276</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Centro</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_11b8f37cc0c384f1b167c12ec6494cf9.setContent(html_eb4b054af5c75b3365d6643ae6ca52b2);
+            
+        
+
+        marker_8bbea92acda07e2c3e1ea7f95e5e4e44.bindPopup(popup_11b8f37cc0c384f1b167c12ec6494cf9)
+        ;
+
+        
+    
+    
+                marker_8bbea92acda07e2c3e1ea7f95e5e4e44.setIcon(icon_6bb5ad84f93a9b51acd0476507cd6a37);
+            
+    
+            var circle_e3c4b28f7d211c723a8e24fe157e7f47 = L.circle(
+                [6.249455967033984, -75.61726353482268],
+                {"bubblingMouseEvents": true, "color": "#90ee90", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#90ee90", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 686.5153538050733, "stroke": true, "weight": 2}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+        var popup_83f7e40aacd2dfc8bd8025ad6dc537c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_20b2113a4b43b05134532b506460ce1b = $(`<div id="html_20b2113a4b43b05134532b506460ce1b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #90ee90; padding-bottom: 5px;">                 BELEN             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>MEDIO ALTO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>3/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$220,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>911</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Centro</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_83f7e40aacd2dfc8bd8025ad6dc537c2.setContent(html_20b2113a4b43b05134532b506460ce1b);
+            
+        
+
+        circle_e3c4b28f7d211c723a8e24fe157e7f47.bindPopup(popup_83f7e40aacd2dfc8bd8025ad6dc537c2)
+        ;
+
+        
+    
+    
+            circle_e3c4b28f7d211c723a8e24fe157e7f47.bindTooltip(
+                `<div>
+                     <b>Belen</b><br>Prestigio: MEDIO ALTO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f8c4320518b597c3a4b703ed8c83930d = L.marker(
+                [6.249455967033984, -75.61726353482268],
+                {
+}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+            var icon_fe26d8bd8412ac5dae4c3fc271c5bc93 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "white",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3fbff6ed70fdb86f171512dee9974fff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8aa38ed0d617314c0568f5532bd925fa = $(`<div id="html_8aa38ed0d617314c0568f5532bd925fa" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #90ee90; padding-bottom: 5px;">                 BELEN             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>MEDIO ALTO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>3/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$220,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>911</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Centro</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_3fbff6ed70fdb86f171512dee9974fff.setContent(html_8aa38ed0d617314c0568f5532bd925fa);
+            
+        
+
+        marker_f8c4320518b597c3a4b703ed8c83930d.bindPopup(popup_3fbff6ed70fdb86f171512dee9974fff)
+        ;
+
+        
+    
+    
+                marker_f8c4320518b597c3a4b703ed8c83930d.setIcon(icon_fe26d8bd8412ac5dae4c3fc271c5bc93);
+            
+    
+            var circle_e43c058170fad803ed3dcbbda48efea3 = L.circle(
+                [6.295993353114571, -75.59261678058856],
+                {"bubblingMouseEvents": true, "color": "#1a4d2e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a4d2e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 653.9385847797063, "stroke": true, "weight": 2}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+        var popup_b73aeca0afa8a74eda5ad630d2cf225b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_289cdb7ef4ed206ee46824df576d93a4 = $(`<div id="html_289cdb7ef4ed206ee46824df576d93a4" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #1a4d2e; padding-bottom: 5px;">                 ENVIGADO             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>PREMIUM</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>5/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$380,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>850</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Zona Sur</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_b73aeca0afa8a74eda5ad630d2cf225b.setContent(html_289cdb7ef4ed206ee46824df576d93a4);
+            
+        
+
+        circle_e43c058170fad803ed3dcbbda48efea3.bindPopup(popup_b73aeca0afa8a74eda5ad630d2cf225b)
+        ;
+
+        
+    
+    
+            circle_e43c058170fad803ed3dcbbda48efea3.bindTooltip(
+                `<div>
+                     <b>Envigado</b><br>Prestigio: PREMIUM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_40e0f02e62df1378edab5ae89632f212 = L.marker(
+                [6.295993353114571, -75.59261678058856],
+                {
+}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+            var icon_aa5a9a0a4dbc0d78b8205d8747254873 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "white",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e48dc872cb261d6a913f2f45177fc994 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_037ba4fef3b588bc996b48bf2ead93a5 = $(`<div id="html_037ba4fef3b588bc996b48bf2ead93a5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #1a4d2e; padding-bottom: 5px;">                 ENVIGADO             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>PREMIUM</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>5/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$380,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>850</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Zona Sur</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_e48dc872cb261d6a913f2f45177fc994.setContent(html_037ba4fef3b588bc996b48bf2ead93a5);
+            
+        
+
+        marker_40e0f02e62df1378edab5ae89632f212.bindPopup(popup_e48dc872cb261d6a913f2f45177fc994)
+        ;
+
+        
+    
+    
+                marker_40e0f02e62df1378edab5ae89632f212.setIcon(icon_aa5a9a0a4dbc0d78b8205d8747254873);
+            
+    
+            var circle_bb28c04bcfde45d9472172b780d470ea = L.circle(
+                [6.30053702740987, -75.65665143706586],
+                {"bubblingMouseEvents": true, "color": "#2d7a4d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d7a4d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 584.5126835781041, "stroke": true, "weight": 2}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+        var popup_6a95b6f78ec2bd0cbc62dbc5ec4469c6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5c395df2cf42725cdc987006d00e9af9 = $(`<div id="html_5c395df2cf42725cdc987006d00e9af9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #2d7a4d; padding-bottom: 5px;">                 SABANETA             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>ALTO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>4/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$260,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>720</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Zona Sur</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_6a95b6f78ec2bd0cbc62dbc5ec4469c6.setContent(html_5c395df2cf42725cdc987006d00e9af9);
+            
+        
+
+        circle_bb28c04bcfde45d9472172b780d470ea.bindPopup(popup_6a95b6f78ec2bd0cbc62dbc5ec4469c6)
+        ;
+
+        
+    
+    
+            circle_bb28c04bcfde45d9472172b780d470ea.bindTooltip(
+                `<div>
+                     <b>Sabaneta</b><br>Prestigio: ALTO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_009780dd824dd6289822173f1a68bef3 = L.marker(
+                [6.30053702740987, -75.65665143706586],
+                {
+}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+            var icon_3d8e1ad13ff1fa30a8c253afb10c5d2b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "white",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2c3b1747885b9b67035ee806e6204436 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_31fe706c6016c382426737750a12b98f = $(`<div id="html_31fe706c6016c382426737750a12b98f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #2d7a4d; padding-bottom: 5px;">                 SABANETA             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>ALTO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>4/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$260,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>720</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Zona Sur</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_2c3b1747885b9b67035ee806e6204436.setContent(html_31fe706c6016c382426737750a12b98f);
+            
+        
+
+        marker_009780dd824dd6289822173f1a68bef3.bindPopup(popup_2c3b1747885b9b67035ee806e6204436)
+        ;
+
+        
+    
+    
+                marker_009780dd824dd6289822173f1a68bef3.setIcon(icon_3d8e1ad13ff1fa30a8c253afb10c5d2b);
+            
+    
+            var circle_865b010be735ae8c8b99c912c36259ab = L.circle(
+                [6.117727948022113, -75.59706590360506],
+                {"bubblingMouseEvents": true, "color": "#2d7a4d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2d7a4d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 563.150867823765, "stroke": true, "weight": 2}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+        var popup_9832f9bc2059d6ff19bd9641d5f29336 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_85502ddfd8572078383fb5f9c5476374 = $(`<div id="html_85502ddfd8572078383fb5f9c5476374" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #2d7a4d; padding-bottom: 5px;">                 ITAGUI             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>ALTO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>4/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$240,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>680</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Zona Sur</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_9832f9bc2059d6ff19bd9641d5f29336.setContent(html_85502ddfd8572078383fb5f9c5476374);
+            
+        
+
+        circle_865b010be735ae8c8b99c912c36259ab.bindPopup(popup_9832f9bc2059d6ff19bd9641d5f29336)
+        ;
+
+        
+    
+    
+            circle_865b010be735ae8c8b99c912c36259ab.bindTooltip(
+                `<div>
+                     <b>Itagui</b><br>Prestigio: ALTO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a221d66f29b032c34a735c6d815cddcd = L.marker(
+                [6.117727948022113, -75.59706590360506],
+                {
+}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+            var icon_1b41b79daada5aae3071869a5f9b5b82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "white",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_302ee54dbfb9e7ea0c80738f8e028246 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b121e69e2f4706ac7502c4816bbaee33 = $(`<div id="html_b121e69e2f4706ac7502c4816bbaee33" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #2d7a4d; padding-bottom: 5px;">                 ITAGUI             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>ALTO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>4/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$240,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>680</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Zona Sur</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_302ee54dbfb9e7ea0c80738f8e028246.setContent(html_b121e69e2f4706ac7502c4816bbaee33);
+            
+        
+
+        marker_a221d66f29b032c34a735c6d815cddcd.bindPopup(popup_302ee54dbfb9e7ea0c80738f8e028246)
+        ;
+
+        
+    
+    
+                marker_a221d66f29b032c34a735c6d815cddcd.setIcon(icon_1b41b79daada5aae3071869a5f9b5b82);
+            
+    
+            var circle_1e249db01376e805fef070dc6ab6c076 = L.circle(
+                [6.256007254902558, -75.6463282992999],
+                {"bubblingMouseEvents": true, "color": "#fff700", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff700", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 520.4272363150867, "stroke": true, "weight": 2}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+        var popup_b5c29708580c1ff302474b352d0de551 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dd4b3d2fec8e75ba6fdc73c9c06e3997 = $(`<div id="html_dd4b3d2fec8e75ba6fdc73c9c06e3997" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #fff700; padding-bottom: 5px;">                 LA AMERICA             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>MEDIO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>2/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$180,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>600</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Centro Occidente</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_b5c29708580c1ff302474b352d0de551.setContent(html_dd4b3d2fec8e75ba6fdc73c9c06e3997);
+            
+        
+
+        circle_1e249db01376e805fef070dc6ab6c076.bindPopup(popup_b5c29708580c1ff302474b352d0de551)
+        ;
+
+        
+    
+    
+            circle_1e249db01376e805fef070dc6ab6c076.bindTooltip(
+                `<div>
+                     <b>La America</b><br>Prestigio: MEDIO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_13c8ec4a2fd259ce90d9119042b34764 = L.marker(
+                [6.256007254902558, -75.6463282992999],
+                {
+}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+            var icon_23788cf7ad696abc2fea9c6114526d2b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "white",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e9871c86287692fd28162058ec529349 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f42ae7fa04957cc8d0384c23ba49ddfe = $(`<div id="html_f42ae7fa04957cc8d0384c23ba49ddfe" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #fff700; padding-bottom: 5px;">                 LA AMERICA             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>MEDIO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>2/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$180,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>600</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Centro Occidente</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_e9871c86287692fd28162058ec529349.setContent(html_f42ae7fa04957cc8d0384c23ba49ddfe);
+            
+        
+
+        marker_13c8ec4a2fd259ce90d9119042b34764.bindPopup(popup_e9871c86287692fd28162058ec529349)
+        ;
+
+        
+    
+    
+                marker_13c8ec4a2fd259ce90d9119042b34764.setIcon(icon_23788cf7ad696abc2fea9c6114526d2b);
+            
+    
+            var circle_2f1f871d462173ee396c5a2e7fd24adc = L.circle(
+                [6.317273610700521, -75.70925796969348],
+                {"bubblingMouseEvents": true, "color": "#90ee90", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#90ee90", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 901.7356475300401, "stroke": true, "weight": 2}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+        var popup_3accd9055b2d8cff7a4020077983e3ae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_09928aeeede9a69e1c19ead3e523fc73 = $(`<div id="html_09928aeeede9a69e1c19ead3e523fc73" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #90ee90; padding-bottom: 5px;">                 BUENOS AIRES             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>MEDIO ALTO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>3/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$200,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>1,314</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Centro Occidente</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_3accd9055b2d8cff7a4020077983e3ae.setContent(html_09928aeeede9a69e1c19ead3e523fc73);
+            
+        
+
+        circle_2f1f871d462173ee396c5a2e7fd24adc.bindPopup(popup_3accd9055b2d8cff7a4020077983e3ae)
+        ;
+
+        
+    
+    
+            circle_2f1f871d462173ee396c5a2e7fd24adc.bindTooltip(
+                `<div>
+                     <b>Buenos Aires</b><br>Prestigio: MEDIO ALTO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_14d7d40d634ac8b09775e9adcc618ce3 = L.marker(
+                [6.317273610700521, -75.70925796969348],
+                {
+}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+            var icon_dc3915feeab13e4221b6713210942059 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "white",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4c03e8f14587ab7c2df9d528dd93917 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb06d43bfcb45327ce29e536945356ac = $(`<div id="html_fb06d43bfcb45327ce29e536945356ac" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #90ee90; padding-bottom: 5px;">                 BUENOS AIRES             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>MEDIO ALTO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>3/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$200,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>1,314</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Centro Occidente</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_c4c03e8f14587ab7c2df9d528dd93917.setContent(html_fb06d43bfcb45327ce29e536945356ac);
+            
+        
+
+        marker_14d7d40d634ac8b09775e9adcc618ce3.bindPopup(popup_c4c03e8f14587ab7c2df9d528dd93917)
+        ;
+
+        
+    
+    
+                marker_14d7d40d634ac8b09775e9adcc618ce3.setIcon(icon_dc3915feeab13e4221b6713210942059);
+            
+    
+            var circle_ff94aa48bef5bf513f789166e242f6f8 = L.circle(
+                [6.228030604424398, -75.62264103055196],
+                {"bubblingMouseEvents": true, "color": "#fff700", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff700", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 667.8237650200267, "stroke": true, "weight": 2}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+        var popup_ae25d9a921e5c2cc8ca9884a4f13ba28 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_787cdcbf02e585838de6f10892e0ab45 = $(`<div id="html_787cdcbf02e585838de6f10892e0ab45" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #fff700; padding-bottom: 5px;">                 CASTILLA             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>MEDIO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>2/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$160,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>876</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Centro Occidente</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_ae25d9a921e5c2cc8ca9884a4f13ba28.setContent(html_787cdcbf02e585838de6f10892e0ab45);
+            
+        
+
+        circle_ff94aa48bef5bf513f789166e242f6f8.bindPopup(popup_ae25d9a921e5c2cc8ca9884a4f13ba28)
+        ;
+
+        
+    
+    
+            circle_ff94aa48bef5bf513f789166e242f6f8.bindTooltip(
+                `<div>
+                     <b>Castilla</b><br>Prestigio: MEDIO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c1c4bb30ab9478fdbb3fb3721b34d8a7 = L.marker(
+                [6.228030604424398, -75.62264103055196],
+                {
+}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+            var icon_7b72c745427b4a7a19ae7e8c82c05438 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "white",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_336650abf21e95ecc6b2e4cb3af3a4bc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bd975e89ed07ce12273a507b35ecfaeb = $(`<div id="html_bd975e89ed07ce12273a507b35ecfaeb" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #fff700; padding-bottom: 5px;">                 CASTILLA             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>MEDIO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>2/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$160,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>876</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Centro Occidente</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_336650abf21e95ecc6b2e4cb3af3a4bc.setContent(html_bd975e89ed07ce12273a507b35ecfaeb);
+            
+        
+
+        marker_c1c4bb30ab9478fdbb3fb3721b34d8a7.bindPopup(popup_336650abf21e95ecc6b2e4cb3af3a4bc)
+        ;
+
+        
+    
+    
+                marker_c1c4bb30ab9478fdbb3fb3721b34d8a7.setIcon(icon_7b72c745427b4a7a19ae7e8c82c05438);
+            
+    
+            var circle_f778f79b563f9e875f60d306ffc1ea07 = L.circle(
+                [6.2519542903819225, -75.49507609667671],
+                {"bubblingMouseEvents": true, "color": "#fff700", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff700", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 400.80106809078774, "stroke": true, "weight": 2}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+        var popup_5cb8123a88ef02f73a9c1c74e2ee25fa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9897017ec4ee6faea96138ad062a39be = $(`<div id="html_9897017ec4ee6faea96138ad062a39be" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #fff700; padding-bottom: 5px;">                 DOCE DE OCTUBRE             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>MEDIO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>2/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$150,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>376</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Centro Occidente</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_5cb8123a88ef02f73a9c1c74e2ee25fa.setContent(html_9897017ec4ee6faea96138ad062a39be);
+            
+        
+
+        circle_f778f79b563f9e875f60d306ffc1ea07.bindPopup(popup_5cb8123a88ef02f73a9c1c74e2ee25fa)
+        ;
+
+        
+    
+    
+            circle_f778f79b563f9e875f60d306ffc1ea07.bindTooltip(
+                `<div>
+                     <b>Doce de Octubre</b><br>Prestigio: MEDIO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2562e907224dfe521513aa9a8c0657b3 = L.marker(
+                [6.2519542903819225, -75.49507609667671],
+                {
+}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+            var icon_cacdf4ae25124729caaf2c0fe089fedf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "white",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0b37f1b8a4926ca72b052d1cd057b3dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5484477d5a5b6a87dc949e4b6fb05988 = $(`<div id="html_5484477d5a5b6a87dc949e4b6fb05988" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #fff700; padding-bottom: 5px;">                 DOCE DE OCTUBRE             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>MEDIO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>2/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$150,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>376</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Centro Occidente</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_0b37f1b8a4926ca72b052d1cd057b3dc.setContent(html_5484477d5a5b6a87dc949e4b6fb05988);
+            
+        
+
+        marker_2562e907224dfe521513aa9a8c0657b3.bindPopup(popup_0b37f1b8a4926ca72b052d1cd057b3dc)
+        ;
+
+        
+    
+    
+                marker_2562e907224dfe521513aa9a8c0657b3.setIcon(icon_cacdf4ae25124729caaf2c0fe089fedf);
+            
+    
+            var circle_b2e8d02de390b43ffd06fa1ac0c37219 = L.circle(
+                [6.2803111493112285, -75.52303781591407],
+                {"bubblingMouseEvents": true, "color": "#fff700", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff700", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 846.1949265687583, "stroke": true, "weight": 2}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+        var popup_8d9c32fd53c570656140fcd65c79e8bb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_da1e3b7a23866a0fe21b7ba551355c5d = $(`<div id="html_da1e3b7a23866a0fe21b7ba551355c5d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #fff700; padding-bottom: 5px;">                 ROBLEDO             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>MEDIO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>2/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$140,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>1,210</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Centro Occidente</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_8d9c32fd53c570656140fcd65c79e8bb.setContent(html_da1e3b7a23866a0fe21b7ba551355c5d);
+            
+        
+
+        circle_b2e8d02de390b43ffd06fa1ac0c37219.bindPopup(popup_8d9c32fd53c570656140fcd65c79e8bb)
+        ;
+
+        
+    
+    
+            circle_b2e8d02de390b43ffd06fa1ac0c37219.bindTooltip(
+                `<div>
+                     <b>Robledo</b><br>Prestigio: MEDIO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7dada8f3869a63ad8387435192a346ee = L.marker(
+                [6.2803111493112285, -75.52303781591407],
+                {
+}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+            var icon_5f21188e45d94e913931fde0a3ea7330 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "white",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dda8ab0381b0f45a66c94ab6b803dcbc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_221b46894e1c7e75abc22cb7f38b83cf = $(`<div id="html_221b46894e1c7e75abc22cb7f38b83cf" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #fff700; padding-bottom: 5px;">                 ROBLEDO             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>MEDIO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>2/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$140,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>1,210</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Centro Occidente</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_dda8ab0381b0f45a66c94ab6b803dcbc.setContent(html_221b46894e1c7e75abc22cb7f38b83cf);
+            
+        
+
+        marker_7dada8f3869a63ad8387435192a346ee.bindPopup(popup_dda8ab0381b0f45a66c94ab6b803dcbc)
+        ;
+
+        
+    
+    
+                marker_7dada8f3869a63ad8387435192a346ee.setIcon(icon_5f21188e45d94e913931fde0a3ea7330);
+            
+    
+            var circle_d41d8cee48a93c70e86f19a293006f70 = L.circle(
+                [6.173883625536086, -75.48738605010546],
+                {"bubblingMouseEvents": true, "color": "#90ee90", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#90ee90", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 649.6662216288385, "stroke": true, "weight": 2}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+        var popup_0222a114b763f0d7c869823c2dcc19b3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1daf22c89fb054eef0d734fe08e551d5 = $(`<div id="html_1daf22c89fb054eef0d734fe08e551d5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #90ee90; padding-bottom: 5px;">                 VILLA HERMOSA             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>MEDIO ALTO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>3/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$210,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>842</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Centro Occidente</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_0222a114b763f0d7c869823c2dcc19b3.setContent(html_1daf22c89fb054eef0d734fe08e551d5);
+            
+        
+
+        circle_d41d8cee48a93c70e86f19a293006f70.bindPopup(popup_0222a114b763f0d7c869823c2dcc19b3)
+        ;
+
+        
+    
+    
+            circle_d41d8cee48a93c70e86f19a293006f70.bindTooltip(
+                `<div>
+                     <b>Villa Hermosa</b><br>Prestigio: MEDIO ALTO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bfa1dd028be3b590b3151f9971deb1fe = L.marker(
+                [6.173883625536086, -75.48738605010546],
+                {
+}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+            var icon_4091904e36f6ef19389a2b62c8e0cba5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "white",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3ea698d4d38d23e67b14d52397d3dae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_54865daaf499048f59c5cc3e7a1dc849 = $(`<div id="html_54865daaf499048f59c5cc3e7a1dc849" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #90ee90; padding-bottom: 5px;">                 VILLA HERMOSA             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>MEDIO ALTO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>3/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$210,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>842</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Centro Occidente</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_d3ea698d4d38d23e67b14d52397d3dae.setContent(html_54865daaf499048f59c5cc3e7a1dc849);
+            
+        
+
+        marker_bfa1dd028be3b590b3151f9971deb1fe.bindPopup(popup_d3ea698d4d38d23e67b14d52397d3dae)
+        ;
+
+        
+    
+    
+                marker_bfa1dd028be3b590b3151f9971deb1fe.setIcon(icon_4091904e36f6ef19389a2b62c8e0cba5);
+            
+    
+            var circle_c8a6e5c37e465dbe24d69195a47a7e9d = L.circle(
+                [6.256092887823907, -75.65088637811391],
+                {"bubblingMouseEvents": true, "color": "#fff700", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff700", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 778.9052069425901, "stroke": true, "weight": 2}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+        var popup_da89b5fc3c953c7ebba5fd42942f5d12 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_26f7aa1d36f7f934f46fce5077c361c4 = $(`<div id="html_26f7aa1d36f7f934f46fce5077c361c4" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #fff700; padding-bottom: 5px;">                 MANRIQUE             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>MEDIO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>2/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$130,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>1,084</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Nororiental</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_da89b5fc3c953c7ebba5fd42942f5d12.setContent(html_26f7aa1d36f7f934f46fce5077c361c4);
+            
+        
+
+        circle_c8a6e5c37e465dbe24d69195a47a7e9d.bindPopup(popup_da89b5fc3c953c7ebba5fd42942f5d12)
+        ;
+
+        
+    
+    
+            circle_c8a6e5c37e465dbe24d69195a47a7e9d.bindTooltip(
+                `<div>
+                     <b>Manrique</b><br>Prestigio: MEDIO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ca0871c90285b2d3470fd4181c32efb0 = L.marker(
+                [6.256092887823907, -75.65088637811391],
+                {
+}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+            var icon_46ccc98e8d164f15bc2a79dffa1e2a4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "white",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_04ec170607c1c393bf8a19e366cb130d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5ceddba797c7ca86a89779886a8c34c7 = $(`<div id="html_5ceddba797c7ca86a89779886a8c34c7" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #fff700; padding-bottom: 5px;">                 MANRIQUE             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>MEDIO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>2/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$130,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>1,084</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Nororiental</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_04ec170607c1c393bf8a19e366cb130d.setContent(html_5ceddba797c7ca86a89779886a8c34c7);
+            
+        
+
+        marker_ca0871c90285b2d3470fd4181c32efb0.bindPopup(popup_04ec170607c1c393bf8a19e366cb130d)
+        ;
+
+        
+    
+    
+                marker_ca0871c90285b2d3470fd4181c32efb0.setIcon(icon_46ccc98e8d164f15bc2a79dffa1e2a4d);
+            
+    
+            var circle_1b9c1700a5d3d6e72157922dcd38a255 = L.circle(
+                [6.207351894153705, -75.56879203035318],
+                {"bubblingMouseEvents": true, "color": "#ff6b6b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff6b6b", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 787.4499332443258, "stroke": true, "weight": 2}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+        var popup_b8073361e921e1a5cd86ed0a7a248d90 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5916b950f87a2546ce0045c552499118 = $(`<div id="html_5916b950f87a2546ce0045c552499118" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #ff6b6b; padding-bottom: 5px;">                 POPULAR             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>BAJO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>1/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$100,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>1,100</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Nororiental</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_b8073361e921e1a5cd86ed0a7a248d90.setContent(html_5916b950f87a2546ce0045c552499118);
+            
+        
+
+        circle_1b9c1700a5d3d6e72157922dcd38a255.bindPopup(popup_b8073361e921e1a5cd86ed0a7a248d90)
+        ;
+
+        
+    
+    
+            circle_1b9c1700a5d3d6e72157922dcd38a255.bindTooltip(
+                `<div>
+                     <b>Popular</b><br>Prestigio: BAJO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_89bc7346c59e940ccff89b2b73668b5d = L.marker(
+                [6.207351894153705, -75.56879203035318],
+                {
+}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+            var icon_b70ed2aa59ef8435cf16a59799b5d2fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "white",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17a6511203f1c72bc506dad1718fb3cb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c17a13980a70a033614b79d02256f849 = $(`<div id="html_c17a13980a70a033614b79d02256f849" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #ff6b6b; padding-bottom: 5px;">                 POPULAR             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>BAJO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>1/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$100,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>1,100</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Nororiental</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_17a6511203f1c72bc506dad1718fb3cb.setContent(html_c17a13980a70a033614b79d02256f849);
+            
+        
+
+        marker_89bc7346c59e940ccff89b2b73668b5d.bindPopup(popup_17a6511203f1c72bc506dad1718fb3cb)
+        ;
+
+        
+    
+    
+                marker_89bc7346c59e940ccff89b2b73668b5d.setIcon(icon_b70ed2aa59ef8435cf16a59799b5d2fd);
+            
+    
+            var circle_ce3df9180277506cfa957174f28711c3 = L.circle(
+                [6.178592328981245, -75.55754124911903],
+                {"bubblingMouseEvents": true, "color": "#ff6b6b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff6b6b", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 942.8571428571429, "stroke": true, "weight": 2}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+        var popup_f34d912d0d5fa7efd4f66e39b100d943 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0cab00bb5c359842ecd976b988365c51 = $(`<div id="html_0cab00bb5c359842ecd976b988365c51" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #ff6b6b; padding-bottom: 5px;">                 SANTA CRUZ             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>BAJO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>1/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$110,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>1,391</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Nororiental</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_f34d912d0d5fa7efd4f66e39b100d943.setContent(html_0cab00bb5c359842ecd976b988365c51);
+            
+        
+
+        circle_ce3df9180277506cfa957174f28711c3.bindPopup(popup_f34d912d0d5fa7efd4f66e39b100d943)
+        ;
+
+        
+    
+    
+            circle_ce3df9180277506cfa957174f28711c3.bindTooltip(
+                `<div>
+                     <b>Santa Cruz</b><br>Prestigio: BAJO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_20545d98cc84abaf529e1122be0c8264 = L.marker(
+                [6.178592328981245, -75.55754124911903],
+                {
+}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+            var icon_43c901c44c3b8e9b73f63978aef49890 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "white",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6262501e2d4329f93be3cec8a7d4cd0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6750ca51945bb7de0e3de58eb49b9f69 = $(`<div id="html_6750ca51945bb7de0e3de58eb49b9f69" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #ff6b6b; padding-bottom: 5px;">                 SANTA CRUZ             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>BAJO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>1/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$110,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>1,391</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Nororiental</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_d6262501e2d4329f93be3cec8a7d4cd0.setContent(html_6750ca51945bb7de0e3de58eb49b9f69);
+            
+        
+
+        marker_20545d98cc84abaf529e1122be0c8264.bindPopup(popup_d6262501e2d4329f93be3cec8a7d4cd0)
+        ;
+
+        
+    
+    
+                marker_20545d98cc84abaf529e1122be0c8264.setIcon(icon_43c901c44c3b8e9b73f63978aef49890);
+            
+    
+            var circle_6f1da94e35bb4efb7ba81be28dd98fd8 = L.circle(
+                [6.209747102475585, -75.56469929890598],
+                {"bubblingMouseEvents": true, "color": "#fff700", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff700", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 524.6995994659546, "stroke": true, "weight": 2}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+        var popup_11291b386f7d516dfa073ec4294c48e5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bfe074bb56249136a5079acf12d19d69 = $(`<div id="html_bfe074bb56249136a5079acf12d19d69" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #fff700; padding-bottom: 5px;">                 SAN JAVIER             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>MEDIO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>2/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$170,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>608</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Noroccidental</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_11291b386f7d516dfa073ec4294c48e5.setContent(html_bfe074bb56249136a5079acf12d19d69);
+            
+        
+
+        circle_6f1da94e35bb4efb7ba81be28dd98fd8.bindPopup(popup_11291b386f7d516dfa073ec4294c48e5)
+        ;
+
+        
+    
+    
+            circle_6f1da94e35bb4efb7ba81be28dd98fd8.bindTooltip(
+                `<div>
+                     <b>San Javier</b><br>Prestigio: MEDIO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f5e14c0bd3438e5f494331ce0f977ce6 = L.marker(
+                [6.209747102475585, -75.56469929890598],
+                {
+}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+            var icon_6782950bf7fbba336a3cf38001b19376 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "white",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1d11c3225e6e95563eedc95d0d3265f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7dbd7bae1f666764d5b91aafebfa1c4e = $(`<div id="html_7dbd7bae1f666764d5b91aafebfa1c4e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #fff700; padding-bottom: 5px;">                 SAN JAVIER             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>MEDIO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>2/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$170,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>608</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Noroccidental</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_1d11c3225e6e95563eedc95d0d3265f5.setContent(html_7dbd7bae1f666764d5b91aafebfa1c4e);
+            
+        
+
+        marker_f5e14c0bd3438e5f494331ce0f977ce6.bindPopup(popup_1d11c3225e6e95563eedc95d0d3265f5)
+        ;
+
+        
+    
+    
+                marker_f5e14c0bd3438e5f494331ce0f977ce6.setIcon(icon_6782950bf7fbba336a3cf38001b19376);
+            
+    
+            var circle_180191ec4f5f172d02a470f5577cf559 = L.circle(
+                [6.200356792598801, -75.61818445497859],
+                {"bubblingMouseEvents": true, "color": "#fff700", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff700", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 503.3377837116155, "stroke": true, "weight": 2}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+        var popup_f33286ce444d4e23ac0caffd2b089c62 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c5c954aafbb686cc780e1eb561bab8c = $(`<div id="html_0c5c954aafbb686cc780e1eb561bab8c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #fff700; padding-bottom: 5px;">                 ARANJUEZ             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>MEDIO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>2/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$160,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>568</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Noroccidental</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_f33286ce444d4e23ac0caffd2b089c62.setContent(html_0c5c954aafbb686cc780e1eb561bab8c);
+            
+        
+
+        circle_180191ec4f5f172d02a470f5577cf559.bindPopup(popup_f33286ce444d4e23ac0caffd2b089c62)
+        ;
+
+        
+    
+    
+            circle_180191ec4f5f172d02a470f5577cf559.bindTooltip(
+                `<div>
+                     <b>Aranjuez</b><br>Prestigio: MEDIO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0ae1bc9d1a8b9e154473a7d7e114af9a = L.marker(
+                [6.200356792598801, -75.61818445497859],
+                {
+}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+            var icon_e5f9d39dc0b46193d7d32baafb9ed1b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "white",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae7a44d8e6e65877bcdcd8f0b965cf55 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e5980cefab972aff60cfdc84ff727a5d = $(`<div id="html_e5980cefab972aff60cfdc84ff727a5d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #fff700; padding-bottom: 5px;">                 ARANJUEZ             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>MEDIO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>2/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$160,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>568</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Noroccidental</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_ae7a44d8e6e65877bcdcd8f0b965cf55.setContent(html_e5980cefab972aff60cfdc84ff727a5d);
+            
+        
+
+        marker_0ae1bc9d1a8b9e154473a7d7e114af9a.bindPopup(popup_ae7a44d8e6e65877bcdcd8f0b965cf55)
+        ;
+
+        
+    
+    
+                marker_0ae1bc9d1a8b9e154473a7d7e114af9a.setIcon(icon_e5f9d39dc0b46193d7d32baafb9ed1b1);
+            
+    
+            var circle_56386e06536d49c93669b356f7e37133 = L.circle(
+                [6.2596970345827785, -75.57815473624812],
+                {"bubblingMouseEvents": true, "color": "#1a4d2e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a4d2e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 980.2403204272364, "stroke": true, "weight": 2}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+        var popup_eabc8dcc2c319f525abfad9a4a4486ab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_85b48f35d4c66f239795fa796eec5fc0 = $(`<div id="html_85b48f35d4c66f239795fa796eec5fc0" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #1a4d2e; padding-bottom: 5px;">                 GUAYABAL             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>PREMIUM</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>4/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$320,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>1,461</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Suroccidental</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_eabc8dcc2c319f525abfad9a4a4486ab.setContent(html_85b48f35d4c66f239795fa796eec5fc0);
+            
+        
+
+        circle_56386e06536d49c93669b356f7e37133.bindPopup(popup_eabc8dcc2c319f525abfad9a4a4486ab)
+        ;
+
+        
+    
+    
+            circle_56386e06536d49c93669b356f7e37133.bindTooltip(
+                `<div>
+                     <b>Guayabal</b><br>Prestigio: PREMIUM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_afe7fe14439c0bba4967b7b0153e7a7e = L.marker(
+                [6.2596970345827785, -75.57815473624812],
+                {
+}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+            var icon_e74ff7b04ebcbe5ef7a518438cdee40e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "white",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4741d6ae99125ded0a23473666f45493 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb68b283d4434f98ff8eec4749708f25 = $(`<div id="html_fb68b283d4434f98ff8eec4749708f25" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #1a4d2e; padding-bottom: 5px;">                 GUAYABAL             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>PREMIUM</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>4/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$320,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>1,461</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Suroccidental</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_4741d6ae99125ded0a23473666f45493.setContent(html_fb68b283d4434f98ff8eec4749708f25);
+            
+        
+
+        marker_afe7fe14439c0bba4967b7b0153e7a7e.bindPopup(popup_4741d6ae99125ded0a23473666f45493)
+        ;
+
+        
+    
+    
+                marker_afe7fe14439c0bba4967b7b0153e7a7e.setIcon(icon_e74ff7b04ebcbe5ef7a518438cdee40e);
+            
+    
+            var circle_7d1266eb8861806b0ce26d859441cde8 = L.circle(
+                [6.197726158980289, -75.62962291138035],
+                {"bubblingMouseEvents": true, "color": "#90ee90", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#90ee90", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 440.3204272363151, "stroke": true, "weight": 2}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+        var popup_10ae872c84ae2b4193e700d41630efbf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_93063972e8064840aa12269902b9271c = $(`<div id="html_93063972e8064840aa12269902b9271c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #90ee90; padding-bottom: 5px;">                 SAN ALEJO             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>MEDIO ALTO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>3/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$190,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>450</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Centro</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_10ae872c84ae2b4193e700d41630efbf.setContent(html_93063972e8064840aa12269902b9271c);
+            
+        
+
+        circle_7d1266eb8861806b0ce26d859441cde8.bindPopup(popup_10ae872c84ae2b4193e700d41630efbf)
+        ;
+
+        
+    
+    
+            circle_7d1266eb8861806b0ce26d859441cde8.bindTooltip(
+                `<div>
+                     <b>San Alejo</b><br>Prestigio: MEDIO ALTO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2f2ae286e1ecb08f06c3da41bf499bcf = L.marker(
+                [6.197726158980289, -75.62962291138035],
+                {
+}
+            ).addTo(map_25fd33ba193529526cc8f15b4c21ed81);
+        
+    
+            var icon_f86b7b9422a92563da58f4d64f33dd91 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "white",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b250f2193dfece02b5f365c8d6f31a36 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f8db5c4200f138959ec2be2ffd3bd6dd = $(`<div id="html_f8db5c4200f138959ec2be2ffd3bd6dd" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 280px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #1a3a52; border-bottom: 2px solid #90ee90; padding-bottom: 5px;">                 SAN ALEJO             </h3>             <table style="width: 100%; border-collapse: collapse; font-size: 12px;">                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Prestigio:</b></td>                     <td style="padding: 8px; text-align: right;"><b>MEDIO ALTO</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Estrato Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>3/6</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Avaluo Prom:</b></td>                     <td style="padding: 8px; text-align: right;"><b>$190,000,000</b></td>                 </tr>                 <tr>                     <td style="padding: 8px;"><b>Total Predios:</b></td>                     <td style="padding: 8px; text-align: right;"><b>450</b></td>                 </tr>                 <tr style="background: #f5f5f5;">                     <td style="padding: 8px;"><b>Zona:</b></td>                     <td style="padding: 8px; text-align: right;"><b>Centro</b></td>                 </tr>             </table>         </div>         </div>`)[0];
+                popup_b250f2193dfece02b5f365c8d6f31a36.setContent(html_f8db5c4200f138959ec2be2ffd3bd6dd);
+            
+        
+
+        marker_2f2ae286e1ecb08f06c3da41bf499bcf.bindPopup(popup_b250f2193dfece02b5f365c8d6f31a36)
+        ;
+
+        
+    
+    
+                marker_2f2ae286e1ecb08f06c3da41bf499bcf.setIcon(icon_f86b7b9422a92563da58f4d64f33dd91);
+            
+</script>
+</html>

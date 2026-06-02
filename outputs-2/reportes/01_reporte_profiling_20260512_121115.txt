@@ -1,0 +1,58 @@
+================================================================================
+REPORTE DE PERFILADO DE DATOS: EAGIC_Catastro
+Timestamp: 20260512_121115
+================================================================================
+
+INFORMACIÓN BÁSICA
+  Registros: 100,000
+  Columnas: 7
+  Memoria: 7.22 MB
+  Duplicados totales: 2
+
+SCORE DE CALIDAD
+  Score Global: 99.09/100 (EXCELENTE)
+  Completitud: 98.49%
+  Consistencia: 100.0%
+
+ANÁLISIS DE NULOS
+                   cantidad  porcentaje  confiabilidad
+tipo_construccion  3,527.00        3.53          96.47
+puntaje            3,527.00        3.53          96.47
+area_construida    3,527.00        3.53          96.47
+barrio_nombre          0.00        0.00         100.00
+estrato                0.00        0.00         100.00
+id_predio              0.00        0.00         100.00
+avaluo_total           0.00        0.00         100.00
+
+ANÁLISIS NUMÉRICO (seleccionado)
+  estrato:
+    Media: 2.06 | Mediana: 2.00
+    Ceros: 9,149 (9.15%)
+    Outliers: 9,149 (9.15%)
+    Confiabilidad: 81.7%
+
+  avaluo_total:
+    Media: 178,800,976.08 | Mediana: 106,899,500.00
+    Ceros: 0 (0.0%)
+    Outliers: 3,835 (3.84%)
+    Confiabilidad: 96.16%
+
+  area_construida:
+    Media: 104.40 | Mediana: 77.00
+    Ceros: 416 (0.43%)
+    Outliers: 6,249 (6.48%)
+    Confiabilidad: 93.09%
+
+  puntaje:
+    Media: 35.70 | Mediana: 36.00
+    Ceros: 1,327 (1.38%)
+    Outliers: 3,911 (4.05%)
+    Confiabilidad: 94.57%
+
+PATRONES DE NULOS CORRELACIONADOS
+  area_construida_puntaje: 3,527 (3.53%)
+  area_construida_tipo_construccion: 3,527 (3.53%)
+  puntaje_tipo_construccion: 3,527 (3.53%)
+
+CORRELACIONES ALTAS (r > 0.5)
+  avaluo_total_area_construida: 0.529

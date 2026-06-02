@@ -1,0 +1,196 @@
+{
+  "meta": {
+    "dataset": "EAGIC_Catastro",
+    "timestamp": "20260520_160722",
+    "registros": 1154823,
+    "columnas": 7,
+    "memoria_mb": 84.57647800445557,
+    "duplicados_totales": 69,
+    "duplicados_completos": 135
+  },
+  "nulos": {
+    "id_predio": {
+      "cantidad": 0,
+      "porcentaje": 0.0,
+      "confiabilidad": 100.0
+    },
+    "estrato": {
+      "cantidad": 0,
+      "porcentaje": 0.0,
+      "confiabilidad": 100.0
+    },
+    "barrio_nombre": {
+      "cantidad": 0,
+      "porcentaje": 0.0,
+      "confiabilidad": 100.0
+    },
+    "avaluo_total": {
+      "cantidad": 0,
+      "porcentaje": 0.0,
+      "confiabilidad": 100.0
+    },
+    "area_construida": {
+      "cantidad": 47956,
+      "porcentaje": 4.15,
+      "confiabilidad": 95.85
+    },
+    "puntaje": {
+      "cantidad": 47956,
+      "porcentaje": 4.15,
+      "confiabilidad": 95.85
+    },
+    "tipo_construccion": {
+      "cantidad": 47956,
+      "porcentaje": 4.15,
+      "confiabilidad": 95.85
+    }
+  },
+  "numerico": {
+    "estrato": {
+      "tipo": "numérico",
+      "no_nulos": 1154823,
+      "media": 1.9185277743862046,
+      "mediana": 2.0,
+      "std": 1.8240525833666787,
+      "min": 0.0,
+      "max": 6.0,
+      "q25": 0.0,
+      "q75": 3.0,
+      "ceros": 432910,
+      "pct_ceros": 37.49,
+      "negativos": 0,
+      "pct_negativos": 0.0,
+      "outliers": 0,
+      "pct_outliers": 0.0,
+      "confiabilidad": 62.51
+    },
+    "avaluo_total": {
+      "tipo": "numérico",
+      "no_nulos": 1154823,
+      "media": 277598325.91618717,
+      "mediana": 98208000.0,
+      "std": 4921268231.402053,
+      "min": 0.0,
+      "max": 1435136924000.0,
+      "q25": 24720000.0,
+      "q75": 198696000.0,
+      "ceros": 5,
+      "pct_ceros": 0.0,
+      "negativos": 0,
+      "pct_negativos": 0.0,
+      "outliers": 91286,
+      "pct_outliers": 7.9,
+      "confiabilidad": 92.09
+    },
+    "area_construida": {
+      "tipo": "numérico",
+      "no_nulos": 1106867,
+      "media": 84.83579483352561,
+      "mediana": 54.0,
+      "std": 416.82909586305755,
+      "min": 0.0,
+      "max": 129090.0,
+      "q25": 17.0,
+      "q75": 95.0,
+      "ceros": 2641,
+      "pct_ceros": 0.24,
+      "negativos": 0,
+      "pct_negativos": 0.0,
+      "outliers": 61393,
+      "pct_outliers": 5.55,
+      "confiabilidad": 94.21
+    },
+    "puntaje": {
+      "tipo": "numérico",
+      "no_nulos": 1106867,
+      "media": 52.473617878209396,
+      "mediana": 56.0,
+      "std": 18.51435608554818,
+      "min": 0.0,
+      "max": 101.0,
+      "q25": 40.0,
+      "q75": 64.0,
+      "ceros": 17761,
+      "pct_ceros": 1.6,
+      "negativos": 0,
+      "pct_negativos": 0.0,
+      "outliers": 17920,
+      "pct_outliers": 1.62,
+      "confiabilidad": 96.78
+    }
+  },
+  "categorico": {
+    "id_predio": {
+      "tipo": "categórico",
+      "no_nulos": 1154823,
+      "valores_unicos": 1116073,
+      "valor_dominante": "392934",
+      "freq_dominante": 73,
+      "pct_dominante": 0.01,
+      "diversidad": 99.99,
+      "top_5_valores": {
+        "392934": 73,
+        "929327": 37,
+        "5048630": 35,
+        "5170935": 34,
+        "229439": 33
+      },
+      "confiabilidad": 100.0
+    },
+    "barrio_nombre": {
+      "tipo": "categórico",
+      "no_nulos": 1154823,
+      "valores_unicos": 350,
+      "valor_dominante": "CABECERA SAN ANTONIO DE PRADO",
+      "freq_dominante": 29612,
+      "pct_dominante": 2.56,
+      "diversidad": 97.44,
+      "top_5_valores": {
+        "CABECERA SAN ANTONIO DE PRADO": 29612,
+        "AREA DE EXPANSIÓN PAJARITO": 21191,
+        "LA CANDELARIA": 20619,
+        "EL RODEO": 18180,
+        "VILLA CARLOTA": 17541
+      },
+      "confiabilidad": 100.0
+    },
+    "tipo_construccion": {
+      "tipo": "categórico",
+      "no_nulos": 1106867,
+      "valores_unicos": 6,
+      "valor_dominante": "R",
+      "freq_dominante": 662255,
+      "pct_dominante": 59.83,
+      "diversidad": 40.17,
+      "top_5_valores": {
+        "R": 662255,
+        "C": 349774,
+        " ": 83890,
+        "I": 10893,
+        "c": 51
+      },
+      "confiabilidad": 95.85
+    }
+  },
+  "patrones_nulos": {
+    "area_construida_puntaje": {
+      "registros_ambos_nulos": 47956,
+      "porcentaje": 4.15
+    },
+    "area_construida_tipo_construccion": {
+      "registros_ambos_nulos": 47956,
+      "porcentaje": 4.15
+    },
+    "puntaje_tipo_construccion": {
+      "registros_ambos_nulos": 47956,
+      "porcentaje": 4.15
+    }
+  },
+  "correlaciones_altas": {},
+  "calidad": {
+    "score_global": 98.93,
+    "completitud": 98.22,
+    "consistencia": 99.99,
+    "estado": "EXCELENTE"
+  }
+}

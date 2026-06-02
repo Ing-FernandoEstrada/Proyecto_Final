@@ -1,0 +1,78 @@
+{
+  "timestamp": "20260512_121116",
+  "dataset": "EAGIC_Catastro",
+  "modelos": {
+    "area_construida": {
+      "modelo_seleccionado": "GradientBoosting",
+      "todos_modelos": {
+        "RandomForest": {
+          "cv_r2": 0.41592978645649026,
+          "test_r2": -2.159348945610201,
+          "test_mae": 32.65509835492259,
+          "test_rmse": 236.86905624324754
+        },
+        "GradientBoosting": {
+          "cv_r2": 0.4998797847235464,
+          "test_r2": 0.14897880251035978,
+          "test_mae": 33.476795919429726,
+          "test_rmse": 122.93618185210903
+        },
+        "Ridge": {
+          "cv_r2": 0.6181096506569757,
+          "test_r2": -0.11738761007616105,
+          "test_mae": 45.40824322534525,
+          "test_rmse": 140.8677109552805
+        }
+      },
+      "metricas_mejor": {
+        "r2": 0.14897880251035978,
+        "mae": 33.476795919429726,
+        "rmse": 122.93618185210903
+      }
+    },
+    "puntaje": {
+      "modelo_seleccionado": "RandomForest",
+      "todos_modelos": {
+        "RandomForest": {
+          "cv_r2": 0.6236166073924011,
+          "test_r2": 0.6385313054639261,
+          "test_mae": 5.583415364436472,
+          "test_rmse": 7.627994028804902
+        },
+        "GradientBoosting": {
+          "cv_r2": 0.5654681378618767,
+          "test_r2": 0.5667873938735408,
+          "test_mae": 6.331596616184007,
+          "test_rmse": 8.350751148908172
+        },
+        "Ridge": {
+          "cv_r2": 0.2892324449704488,
+          "test_r2": 0.32183334955718856,
+          "test_mae": 7.946217771917898,
+          "test_rmse": 10.448241772671354
+        }
+      },
+      "metricas_mejor": {
+        "r2": 0.6385313054639261,
+        "mae": 5.583415364436472,
+        "rmse": 7.627994028804902
+      }
+    },
+    "tipo_construccion": {
+      "modelo_seleccionado": "GradientBoosting",
+      "todos_modelos": {
+        "RandomForest": {
+          "cv_acc": 0.9300120988226382,
+          "test_acc": 0.9285007693998681
+        },
+        "GradientBoosting": {
+          "cv_acc": 0.9583699657275849,
+          "test_acc": 0.9588920641899319
+        }
+      },
+      "metricas_mejor": {
+        "accuracy": 0.9588920641899319
+      }
+    }
+  }
+}

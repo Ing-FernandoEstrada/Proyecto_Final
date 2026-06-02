@@ -30,3 +30,8 @@ outputs-1/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Exclusions
+2/
+.codex-tools/
+.python-version

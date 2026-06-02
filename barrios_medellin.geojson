@@ -1,0 +1,5317 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5663538,
+          6.291341269
+        ]
+      },
+      "properties": {
+        "BARRIO": "TRICENTENARIO",
+        "COMUNA": "CASTILLA",
+        "aream2": 420637.9703,
+        "areakm2": 0.42063797
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55765797,
+          6.296222234
+        ]
+      },
+      "properties": {
+        "BARRIO": "VILLA NIZA",
+        "COMUNA": "SANTA CRUZ",
+        "aream2": 143215.3275,
+        "areakm2": 0.143215328
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.51582816,
+          6.235049724
+        ]
+      },
+      "properties": {
+        "BARRIO": "MEDIA LUNA",
+        "COMUNA": "CORREGIMIENTO DE SANTA ELENA",
+        "aream2": 9444550.974,
+        "areakm2": 9.444550974
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.48097417,
+          6.241835105
+        ]
+      },
+      "properties": {
+        "BARRIO": "BARRO BLANCO",
+        "COMUNA": "CORREGIMIENTO DE SANTA ELENA",
+        "aream2": 3117979.767,
+        "areakm2": 3.117979767
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58140702,
+          6.266566911
+        ]
+      },
+      "properties": {
+        "BARRIO": "ECOPARQUE CERRO EL VOLADOR",
+        "COMUNA": "ROBLEDO",
+        "aream2": 911215.9726,
+        "areakm2": 0.911215973
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54392128,
+          6.264672596
+        ]
+      },
+      "properties": {
+        "BARRIO": "VERSALLES NO.1",
+        "COMUNA": "MANRIQUE",
+        "aream2": 369634.3907,
+        "areakm2": 0.369634391
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55212939,
+          6.211756337
+        ]
+      },
+      "properties": {
+        "BARRIO": "ALTOS DEL POBLADO",
+        "COMUNA": "EL POBLADO",
+        "aream2": 910952.5773,
+        "areakm2": 0.910952577
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57369855,
+          6.244129389
+        ]
+      },
+      "properties": {
+        "BARRIO": "CENTRO ADMINISTRATIVO",
+        "COMUNA": "LA CANDELARIA",
+        "aream2": 136990.6828,
+        "areakm2": 0.136990683
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59557005,
+          6.243255395
+        ]
+      },
+      "properties": {
+        "BARRIO": "LAURELES",
+        "COMUNA": "LAURELES ESTADIO",
+        "aream2": 707014.8213,
+        "areakm2": 0.707014821
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6063804,
+          6.264988569
+        ]
+      },
+      "properties": {
+        "BARRIO": "SANTA ROSA DE LIMA",
+        "COMUNA": "SAN JAVIER",
+        "aream2": 139970.9964,
+        "areakm2": 0.139970996
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.607151,
+          6.257713758
+        ]
+      },
+      "properties": {
+        "BARRIO": "SANTA LUCÍA",
+        "COMUNA": "LA AMÉRICA",
+        "aream2": 275913.7402,
+        "areakm2": 0.27591374
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6015749,
+          6.256313759
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA FLORESTA",
+        "COMUNA": "LA AMÉRICA",
+        "aream2": 422571.9138,
+        "areakm2": 0.422571914
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54483734,
+          6.250656492
+        ]
+      },
+      "properties": {
+        "BARRIO": "LOS MANGOS",
+        "COMUNA": "VILLA HERMOSA",
+        "aream2": 467257.0802,
+        "areakm2": 0.46725708
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56070026,
+          6.266960798
+        ]
+      },
+      "properties": {
+        "BARRIO": "SAN PEDRO",
+        "COMUNA": "ARANJUEZ",
+        "aream2": 245843.1268,
+        "areakm2": 0.245843127
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61003816,
+          6.235945036
+        ]
+      },
+      "properties": {
+        "BARRIO": "LAS MERCEDES",
+        "COMUNA": "BELÉN",
+        "aream2": 376395.954,
+        "areakm2": 0.376395954
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55876657,
+          6.24772743
+        ]
+      },
+      "properties": {
+        "BARRIO": "BOSTON",
+        "COMUNA": "LA CANDELARIA",
+        "aream2": 535706.4326,
+        "areakm2": 0.535706433
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.53007133,
+          6.237172572
+        ]
+      },
+      "properties": {
+        "BARRIO": "VILLA TURBAY",
+        "COMUNA": "VILLA HERMOSA",
+        "aream2": 247840.3694,
+        "areakm2": 0.247840369
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56320662,
+          6.228990966
+        ]
+      },
+      "properties": {
+        "BARRIO": "ASOMADERA NO.1",
+        "COMUNA": "BUENOS AIRES",
+        "aream2": 570344.5029,
+        "areakm2": 0.570344503
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54489638,
+          6.228750276
+        ]
+      },
+      "properties": {
+        "BARRIO": "BOMBONÁ NO.2",
+        "COMUNA": "BUENOS AIRES",
+        "aream2": 659649.1665,
+        "areakm2": 0.659649167
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54689073,
+          6.300278427
+        ]
+      },
+      "properties": {
+        "BARRIO": "POPULAR",
+        "COMUNA": "POPULAR",
+        "aream2": 446895.5881,
+        "areakm2": 0.446895588
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.53812348,
+          6.270332531
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA CRUZ",
+        "COMUNA": "MANRIQUE",
+        "aream2": 600546.0794,
+        "areakm2": 0.600546079
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58845675,
+          6.268950289
+        ]
+      },
+      "properties": {
+        "BARRIO": "SAN GERMÁN",
+        "COMUNA": "ROBLEDO",
+        "aream2": 569370.838,
+        "areakm2": 0.569370838
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.62838059,
+          6.259252685
+        ]
+      },
+      "properties": {
+        "BARRIO": "EDUARDO SANTOS",
+        "COMUNA": "SAN JAVIER",
+        "aream2": 236240.5371,
+        "areakm2": 0.236240537
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58177852,
+          6.260365896
+        ]
+      },
+      "properties": {
+        "BARRIO": "NUEVA VILLA DE LA IGUANÁ",
+        "COMUNA": "ROBLEDO",
+        "aream2": 65026.71083,
+        "areakm2": 0.065026711
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.545608,
+          6.237879589
+        ]
+      },
+      "properties": {
+        "BARRIO": "ALEJANDRO ECHAVARRÍA",
+        "COMUNA": "BUENOS AIRES",
+        "aream2": 365418.2731,
+        "areakm2": 0.365418273
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58422628,
+          6.29640995
+        ]
+      },
+      "properties": {
+        "BARRIO": "PICACHO",
+        "COMUNA": "DOCE DE OCTUBRE",
+        "aream2": 416246.4259,
+        "areakm2": 0.416246426
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54927297,
+          6.289939919
+        ]
+      },
+      "properties": {
+        "BARRIO": "MOSCÚ NO.2",
+        "COMUNA": "POPULAR",
+        "aream2": 282167.9982,
+        "areakm2": 0.282167998
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54391583,
+          6.296963491
+        ]
+      },
+      "properties": {
+        "BARRIO": "SANTO DOMINGO SAVIO NO.1",
+        "COMUNA": "POPULAR",
+        "aream2": 561247.0454,
+        "areakm2": 0.561247045
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60834947,
+          6.253209821
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL DANUBIO",
+        "COMUNA": "LA AMÉRICA",
+        "aream2": 212062.295,
+        "areakm2": 0.212062295
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.53833103,
+          6.294513654
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA AVANZADA",
+        "COMUNA": "POPULAR",
+        "aream2": 276605.4768,
+        "areakm2": 0.276605477
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57308117,
+          6.234319343
+        ]
+      },
+      "properties": {
+        "BARRIO": "PERPETUO SOCORRO",
+        "COMUNA": "LA CANDELARIA",
+        "aream2": 640206.9838,
+        "areakm2": 0.640206984
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56494903,
+          6.181352389
+        ]
+      },
+      "properties": {
+        "BARRIO": "SAN LUCAS",
+        "COMUNA": "EL POBLADO",
+        "aream2": 1228349.924,
+        "areakm2": 1.228349924
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.49578312,
+          6.236448276
+        ]
+      },
+      "properties": {
+        "BARRIO": "PIEDRA GORDA",
+        "COMUNA": "CORREGIMIENTO DE SANTA ELENA",
+        "aream2": 3016088.18,
+        "areakm2": 3.01608818
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.62898439,
+          6.234913427
+        ]
+      },
+      "properties": {
+        "BARRIO": "SAN PABLO",
+        "COMUNA": "CORREGIMIENTO DE ALTAVISTA",
+        "aream2": 3249006.277,
+        "areakm2": 3.249006277
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60186226,
+          6.266229188
+        ]
+      },
+      "properties": {
+        "BARRIO": "CALASANZ PARTE ALTA",
+        "COMUNA": "LA AMÉRICA",
+        "aream2": 414262.184,
+        "areakm2": 0.414262184
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.64848066,
+          6.232417585
+        ]
+      },
+      "properties": {
+        "BARRIO": "AGUAS FRÍAS",
+        "COMUNA": "CORREGIMIENTO DE ALTAVISTA",
+        "aream2": 3359881.71,
+        "areakm2": 3.35988171
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55279193,
+          6.306826684
+        ]
+      },
+      "properties": {
+        "BARRIO": "PLAYÓN DE LOS COMUNEROS",
+        "COMUNA": "SANTA CRUZ",
+        "aream2": 205378.3979,
+        "areakm2": 0.205378398
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58304283,
+          6.30669802
+        ]
+      },
+      "properties": {
+        "BARRIO": "PROGRESO NO.2",
+        "COMUNA": "DOCE DE OCTUBRE",
+        "aream2": 115319.7558,
+        "areakm2": 0.115319756
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56922699,
+          6.267506071
+        ]
+      },
+      "properties": {
+        "BARRIO": "UNIVERSIDAD DE ANTIOQUIA",
+        "COMUNA": "ARANJUEZ",
+        "aream2": 312368.6571,
+        "areakm2": 0.312368657
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57095109,
+          6.261557831
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL CHAGUALO",
+        "COMUNA": "LA CANDELARIA",
+        "aream2": 366479.2508,
+        "areakm2": 0.366479251
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58473842,
+          6.206193678
+        ]
+      },
+      "properties": {
+        "BARRIO": "CRISTO REY",
+        "COMUNA": "GUAYABAL",
+        "aream2": 759523.7497,
+        "areakm2": 0.75952375
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58268543,
+          6.242459367
+        ]
+      },
+      "properties": {
+        "BARRIO": "LOS CONQUISTADORES",
+        "COMUNA": "LAURELES ESTADIO",
+        "aream2": 683261.6388,
+        "areakm2": 0.683261639
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58336044,
+          6.227636007
+        ]
+      },
+      "properties": {
+        "BARRIO": "TRINIDAD",
+        "COMUNA": "GUAYABAL",
+        "aream2": 679708.5045,
+        "areakm2": 0.679708505
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55237293,
+          6.268249092
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL POMAR",
+        "COMUNA": "MANRIQUE",
+        "aream2": 157934.963,
+        "areakm2": 0.157934963
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54003788,
+          6.275744833
+        ]
+      },
+      "properties": {
+        "BARRIO": "ORIENTE",
+        "COMUNA": "MANRIQUE",
+        "aream2": 412249.9657,
+        "areakm2": 0.412249966
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5494235,
+          6.30338874
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA ISLA",
+        "COMUNA": "SANTA CRUZ",
+        "aream2": 213093.4253,
+        "areakm2": 0.213093425
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55865953,
+          6.219163527
+        ]
+      },
+      "properties": {
+        "BARRIO": "ASOMADERA NO.3",
+        "COMUNA": "BUENOS AIRES",
+        "aream2": 170930.1696,
+        "areakm2": 0.17093017
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57235069,
+          6.190438938
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL CASTILLO",
+        "COMUNA": "EL POBLADO",
+        "aream2": 722756.0818,
+        "areakm2": 0.722756082
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5425751,
+          6.283731546
+        ]
+      },
+      "properties": {
+        "BARRIO": "SAN JOSÉ LA CIMA NO.1",
+        "COMUNA": "MANRIQUE",
+        "aream2": 155475.8689,
+        "areakm2": 0.155475869
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54551867,
+          6.269197432
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL RAIZAL",
+        "COMUNA": "MANRIQUE",
+        "aream2": 297960.6984,
+        "areakm2": 0.297960698
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5516949,
+          6.287398256
+        ]
+      },
+      "properties": {
+        "BARRIO": "VILLA GUADALUPE",
+        "COMUNA": "POPULAR",
+        "aream2": 238610.0664,
+        "areakm2": 0.238610066
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6033356,
+          6.223100561
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA GLORIA",
+        "COMUNA": "BELÉN",
+        "aream2": 611238.7135,
+        "areakm2": 0.611238714
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59910644,
+          6.272683105
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL PESEBRE",
+        "COMUNA": "SAN JAVIER",
+        "aream2": 221779.2289,
+        "areakm2": 0.221779229
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5442398,
+          6.233788851
+        ]
+      },
+      "properties": {
+        "BARRIO": "LOS CERROS EL VERGEL",
+        "COMUNA": "BUENOS AIRES",
+        "aream2": 316940.3135,
+        "areakm2": 0.316940314
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.52786212,
+          6.23362241
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA SIERRA",
+        "COMUNA": "VILLA HERMOSA",
+        "aream2": 212262.8664,
+        "areakm2": 0.212262866
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56696874,
+          6.21290959
+        ]
+      },
+      "properties": {
+        "BARRIO": "LALINDE",
+        "COMUNA": "EL POBLADO",
+        "aream2": 230059.9311,
+        "areakm2": 0.230059931
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55714991,
+          6.265974397
+        ]
+      },
+      "properties": {
+        "BARRIO": "MANRIQUE CENTRAL NO.1",
+        "COMUNA": "ARANJUEZ",
+        "aream2": 355580.3742,
+        "areakm2": 0.355580374
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60027184,
+          6.235574125
+        ]
+      },
+      "properties": {
+        "BARRIO": "MIRAVALLE",
+        "COMUNA": "BELÉN",
+        "aream2": 164413.7899,
+        "areakm2": 0.16441379
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.53981164,
+          6.282341079
+        ]
+      },
+      "properties": {
+        "BARRIO": "MARÍA CANO-CARAMBOLAS",
+        "COMUNA": "MANRIQUE",
+        "aream2": 352919.2071,
+        "areakm2": 0.352919207
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.62376993,
+          6.249291913
+        ]
+      },
+      "properties": {
+        "BARRIO": "LAS INDEPENDENCIAS",
+        "COMUNA": "SAN JAVIER",
+        "aream2": 254173.1202,
+        "areakm2": 0.25417312
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58997744,
+          6.219193414
+        ]
+      },
+      "properties": {
+        "BARRIO": "PARQUE JUAN PABLO II",
+        "COMUNA": "GUAYABAL",
+        "aream2": 1390665.72,
+        "areakm2": 1.39066572
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55372518,
+          6.291568664
+        ]
+      },
+      "properties": {
+        "BARRIO": "MOSCÚ NO.1",
+        "COMUNA": "SANTA CRUZ",
+        "aream2": 190820.7867,
+        "areakm2": 0.190820787
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58284477,
+          6.277366175
+        ]
+      },
+      "properties": {
+        "BARRIO": "BOSQUES DE SAN PABLO",
+        "COMUNA": "ROBLEDO",
+        "aream2": 263146.8836,
+        "areakm2": 0.263146884
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59384666,
+          6.205776676
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL RODEO",
+        "COMUNA": "GUAYABAL",
+        "aream2": 741105.0036,
+        "areakm2": 0.741105004
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55485557,
+          6.235728516
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA MILAGROSA",
+        "COMUNA": "BUENOS AIRES",
+        "aream2": 199688.1604,
+        "areakm2": 0.19968816
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56789562,
+          6.209236297
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL POBLADO",
+        "COMUNA": "EL POBLADO",
+        "aream2": 261433.1138,
+        "areakm2": 0.261433114
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56869241,
+          6.242653971
+        ]
+      },
+      "properties": {
+        "BARRIO": "BARRIO COLÓN",
+        "COMUNA": "LA CANDELARIA",
+        "aream2": 358188.331,
+        "areakm2": 0.358188331
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59916763,
+          6.23251318
+        ]
+      },
+      "properties": {
+        "BARRIO": "BELÉN",
+        "COMUNA": "BELÉN",
+        "aream2": 534933.3337,
+        "areakm2": 0.534933334
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58556214,
+          6.276330008
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA PILARICA",
+        "COMUNA": "ROBLEDO",
+        "aream2": 304179.0829,
+        "areakm2": 0.304179083
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.62701624,
+          6.247054835
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL CORAZÓN",
+        "COMUNA": "SAN JAVIER",
+        "aream2": 203072.3269,
+        "areakm2": 0.203072327
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57285295,
+          6.241300052
+        ]
+      },
+      "properties": {
+        "BARRIO": "CALLE NUEVA",
+        "COMUNA": "LA CANDELARIA",
+        "aream2": 229172.4218,
+        "areakm2": 0.229172422
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5985521,
+          6.248175958
+        ]
+      },
+      "properties": {
+        "BARRIO": "LORENA",
+        "COMUNA": "LAURELES ESTADIO",
+        "aream2": 410861.6211,
+        "areakm2": 0.410861621
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56358888,
+          6.270506315
+        ]
+      },
+      "properties": {
+        "BARRIO": "JARDÍN BOTÁNICO",
+        "COMUNA": "ARANJUEZ",
+        "aream2": 159710.6926,
+        "areakm2": 0.159710693
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55499226,
+          6.305128469
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA FRONTERA",
+        "COMUNA": "SANTA CRUZ",
+        "aream2": 162576.7165,
+        "areakm2": 0.162576717
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56875357,
+          6.305850644
+        ]
+      },
+      "properties": {
+        "BARRIO": "TEJELO",
+        "COMUNA": "CASTILLA",
+        "aream2": 423036.7418,
+        "areakm2": 0.423036742
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5625036,
+          6.2997826
+        ]
+      },
+      "properties": {
+        "BARRIO": "PLAZA DE FERIAS",
+        "COMUNA": "CASTILLA",
+        "aream2": 339279.215,
+        "areakm2": 0.339279215
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58259793,
+          6.212910217
+        ]
+      },
+      "properties": {
+        "BARRIO": "CAMPO AMOR",
+        "COMUNA": "GUAYABAL",
+        "aream2": 1037059.722,
+        "areakm2": 1.037059722
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55004541,
+          6.237114732
+        ]
+      },
+      "properties": {
+        "BARRIO": "MIRAFLORES",
+        "COMUNA": "BUENOS AIRES",
+        "aream2": 291109.6054,
+        "areakm2": 0.291109605
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55820232,
+          6.252517664
+        ]
+      },
+      "properties": {
+        "BARRIO": "LOS ÁNGELES",
+        "COMUNA": "LA CANDELARIA",
+        "aream2": 237106.3898,
+        "areakm2": 0.23710639
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56884703,
+          6.199803534
+        ]
+      },
+      "properties": {
+        "BARRIO": "ALEJANDRÍA",
+        "COMUNA": "EL POBLADO",
+        "aream2": 432153.4528,
+        "areakm2": 0.432153453
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54819714,
+          6.278903432
+        ]
+      },
+      "properties": {
+        "BARRIO": "LAS GRANJAS",
+        "COMUNA": "MANRIQUE",
+        "aream2": 641348.9773,
+        "areakm2": 0.641348977
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.53677963,
+          6.229908408
+        ]
+      },
+      "properties": {
+        "BARRIO": "BARRIOS DE JESÚS",
+        "COMUNA": "BUENOS AIRES",
+        "aream2": 442236.242,
+        "areakm2": 0.442236242
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60877651,
+          6.263772288
+        ]
+      },
+      "properties": {
+        "BARRIO": "METROPOLITANO",
+        "COMUNA": "SAN JAVIER",
+        "aream2": 106982.4433,
+        "areakm2": 0.106982443
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55330128,
+          6.300400229
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA FRANCIA",
+        "COMUNA": "SANTA CRUZ",
+        "aream2": 341808.288,
+        "areakm2": 0.341808288
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59554993,
+          6.220618113
+        ]
+      },
+      "properties": {
+        "BARRIO": "LAS PLAYAS",
+        "COMUNA": "BELÉN",
+        "aream2": 354696.0602,
+        "areakm2": 0.35469606
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54591903,
+          6.287544339
+        ]
+      },
+      "properties": {
+        "BARRIO": "SAN PABLO",
+        "COMUNA": "POPULAR",
+        "aream2": 210321.2604,
+        "areakm2": 0.21032126
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58795605,
+          6.261387469
+        ]
+      },
+      "properties": {
+        "BARRIO": "CUARTA BRIGADA",
+        "COMUNA": "LAURELES ESTADIO",
+        "aream2": 272442.1268,
+        "areakm2": 0.272442127
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60091122,
+          6.241226456
+        ]
+      },
+      "properties": {
+        "BARRIO": "LAS ACACIAS",
+        "COMUNA": "LAURELES ESTADIO",
+        "aream2": 341239.3423,
+        "areakm2": 0.341239342
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55911696,
+          6.19605043
+        ]
+      },
+      "properties": {
+        "BARRIO": "LOS NARANJOS",
+        "COMUNA": "EL POBLADO",
+        "aream2": 965373.3311,
+        "areakm2": 0.965373331
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59456589,
+          6.287465696
+        ]
+      },
+      "properties": {
+        "BARRIO": "AURES NO.1",
+        "COMUNA": "ROBLEDO",
+        "aream2": 761953.7128,
+        "areakm2": 0.761953713
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55139249,
+          6.231254488
+        ]
+      },
+      "properties": {
+        "BARRIO": "CATALUÑA",
+        "COMUNA": "BUENOS AIRES",
+        "aream2": 472280.6726,
+        "areakm2": 0.472280673
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60143057,
+          6.222797802
+        ]
+      },
+      "properties": {
+        "BARRIO": "SIN NOMBRE",
+        "COMUNA": "SIN NOMBRE",
+        "aream2": 132771.5132,
+        "areakm2": 0.132771513
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.53861935,
+          6.288892848
+        ]
+      },
+      "properties": {
+        "BARRIO": "CARPINELO",
+        "COMUNA": "POPULAR",
+        "aream2": 361946.2697,
+        "areakm2": 0.36194627
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55496566,
+          6.29802959
+        ]
+      },
+      "properties": {
+        "BARRIO": "ANDALUCÍA",
+        "COMUNA": "SANTA CRUZ",
+        "aream2": 228212.5807,
+        "areakm2": 0.228212581
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60802865,
+          6.240448505
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA CASTELLANA",
+        "COMUNA": "LAURELES ESTADIO",
+        "aream2": 696663.1846,
+        "areakm2": 0.696663185
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57727716,
+          6.243878887
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA ALPUJARRA",
+        "COMUNA": "LA CANDELARIA",
+        "aream2": 316459.0941,
+        "areakm2": 0.316459094
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58014933,
+          6.257837726
+        ]
+      },
+      "properties": {
+        "BARRIO": "CARLOS E. RESTREPO",
+        "COMUNA": "LAURELES ESTADIO",
+        "aream2": 449895.3237,
+        "areakm2": 0.449895324
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59770637,
+          6.275776655
+        ]
+      },
+      "properties": {
+        "BARRIO": "ROBLEDO",
+        "COMUNA": "ROBLEDO",
+        "aream2": 446970.0336,
+        "areakm2": 0.446970034
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61414086,
+          6.265875793
+        ]
+      },
+      "properties": {
+        "BARRIO": "JUAN XXIII LA QUIEBRA",
+        "COMUNA": "SAN JAVIER",
+        "aream2": 224937.1607,
+        "areakm2": 0.224937161
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56652654,
+          6.249516422
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA CANDELARIA",
+        "COMUNA": "LA CANDELARIA",
+        "aream2": 649229.1655,
+        "areakm2": 0.649229165
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56678389,
+          6.278581555
+        ]
+      },
+      "properties": {
+        "BARRIO": "MORAVIA",
+        "COMUNA": "ARANJUEZ",
+        "aream2": 482535.1182,
+        "areakm2": 0.482535118
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57325388,
+          6.254307202
+        ]
+      },
+      "properties": {
+        "BARRIO": "SAN BENITO",
+        "COMUNA": "LA CANDELARIA",
+        "aream2": 493350.9501,
+        "areakm2": 0.49335095
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.62099323,
+          6.252229475
+        ]
+      },
+      "properties": {
+        "BARRIO": "VEINTE DE JULIO",
+        "COMUNA": "SAN JAVIER",
+        "aream2": 381831.4708,
+        "areakm2": 0.381831471
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58135367,
+          6.279789327
+        ]
+      },
+      "properties": {
+        "BARRIO": "ALTAMIRA",
+        "COMUNA": "ROBLEDO",
+        "aream2": 367264.6328,
+        "areakm2": 0.367264633
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56518092,
+          6.262886471
+        ]
+      },
+      "properties": {
+        "BARRIO": "HOSPITAL SAN VICENTE DE PAÚL",
+        "COMUNA": "LA CANDELARIA",
+        "aream2": 86561.79178,
+        "areakm2": 0.086561792
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55596512,
+          6.25516004
+        ]
+      },
+      "properties": {
+        "BARRIO": "SAN MIGUEL",
+        "COMUNA": "VILLA HERMOSA",
+        "aream2": 371565.9486,
+        "areakm2": 0.371565949
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57714738,
+          6.249981479
+        ]
+      },
+      "properties": {
+        "BARRIO": "CORAZÓN DE JESÚS",
+        "COMUNA": "LA CANDELARIA",
+        "aream2": 330239.9555,
+        "areakm2": 0.330239955
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55731103,
+          6.210751257
+        ]
+      },
+      "properties": {
+        "BARRIO": "LAS LOMAS NO.2",
+        "COMUNA": "EL POBLADO",
+        "aream2": 335754.2218,
+        "areakm2": 0.335754222
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59552836,
+          6.254275016
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL VELÓDROMO",
+        "COMUNA": "LAURELES ESTADIO",
+        "aream2": 367628.692,
+        "areakm2": 0.367628692
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57469441,
+          6.307063693
+        ]
+      },
+      "properties": {
+        "BARRIO": "SANTANDER",
+        "COMUNA": "DOCE DE OCTUBRE",
+        "aream2": 414068.0321,
+        "areakm2": 0.414068032
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55469304,
+          6.278931006
+        ]
+      },
+      "properties": {
+        "BARRIO": "LAS ESMERALDAS",
+        "COMUNA": "ARANJUEZ",
+        "aream2": 152830.673,
+        "areakm2": 0.152830673
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58291722,
+          6.254669015
+        ]
+      },
+      "properties": {
+        "BARRIO": "SURAMERICANA",
+        "COMUNA": "LAURELES ESTADIO",
+        "aream2": 488003.951,
+        "areakm2": 0.488003951
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5542114,
+          6.242871905
+        ]
+      },
+      "properties": {
+        "BARRIO": "BARRIO CAICEDO",
+        "COMUNA": "BUENOS AIRES",
+        "aream2": 210183.3881,
+        "areakm2": 0.210183388
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5808611,
+          6.272151664
+        ]
+      },
+      "properties": {
+        "BARRIO": "B. CERRO EL VOLADOR",
+        "COMUNA": "ROBLEDO",
+        "aream2": 117617.9663,
+        "areakm2": 0.117617966
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61538324,
+          6.275870459
+        ]
+      },
+      "properties": {
+        "BARRIO": "SANTA MARGARITA",
+        "COMUNA": "ROBLEDO",
+        "aream2": 508745.6042,
+        "areakm2": 0.508745604
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56538798,
+          6.239673458
+        ]
+      },
+      "properties": {
+        "BARRIO": "LAS PALMAS",
+        "COMUNA": "LA CANDELARIA",
+        "aream2": 322941.8627,
+        "areakm2": 0.322941863
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60895882,
+          6.247804044
+        ]
+      },
+      "properties": {
+        "BARRIO": "BARRIO CRISTÓBAL",
+        "COMUNA": "LA AMÉRICA",
+        "aream2": 236354.1303,
+        "areakm2": 0.23635413
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56900336,
+          6.297561123
+        ]
+      },
+      "properties": {
+        "BARRIO": "GIRARDOT",
+        "COMUNA": "CASTILLA",
+        "aream2": 512885.5501,
+        "areakm2": 0.51288555
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57041495,
+          6.195550725
+        ]
+      },
+      "properties": {
+        "BARRIO": "LOS BALSOS NO.2",
+        "COMUNA": "EL POBLADO",
+        "aream2": 486361.1312,
+        "areakm2": 0.486361131
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59247431,
+          6.266095509
+        ]
+      },
+      "properties": {
+        "BARRIO": "LOS COLORES",
+        "COMUNA": "LAURELES ESTADIO",
+        "aream2": 554667.6531,
+        "areakm2": 0.554667653
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59558003,
+          6.226075768
+        ]
+      },
+      "properties": {
+        "BARRIO": "SAN BERNARDO",
+        "COMUNA": "BELÉN",
+        "aream2": 567858.8392,
+        "areakm2": 0.567858839
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56422256,
+          6.287134996
+        ]
+      },
+      "properties": {
+        "BARRIO": "PALERMO",
+        "COMUNA": "ARANJUEZ",
+        "aream2": 219527.8989,
+        "areakm2": 0.219527899
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58555718,
+          6.246399902
+        ]
+      },
+      "properties": {
+        "BARRIO": "SAN JOAQUÍN",
+        "COMUNA": "LAURELES ESTADIO",
+        "aream2": 328394.6821,
+        "areakm2": 0.328394682
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57324245,
+          6.213378374
+        ]
+      },
+      "properties": {
+        "BARRIO": "MANILA",
+        "COMUNA": "EL POBLADO",
+        "aream2": 274139.2707,
+        "areakm2": 0.274139271
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54656968,
+          6.260225495
+        ]
+      },
+      "properties": {
+        "BARRIO": "BATALLÓN GIRARDOT",
+        "COMUNA": "VILLA HERMOSA",
+        "aream2": 323983.0397,
+        "areakm2": 0.32398304
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.53957761,
+          6.237023642
+        ]
+      },
+      "properties": {
+        "BARRIO": "VILLATINA",
+        "COMUNA": "VILLA HERMOSA",
+        "aream2": 406625.8573,
+        "areakm2": 0.406625857
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5606135,
+          6.286889185
+        ]
+      },
+      "properties": {
+        "BARRIO": "SAN ISIDRO",
+        "COMUNA": "ARANJUEZ",
+        "aream2": 432191.9841,
+        "areakm2": 0.432191984
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54322017,
+          6.278421955
+        ]
+      },
+      "properties": {
+        "BARRIO": "SAN JOSÉ LA CIMA NO.2",
+        "COMUNA": "MANRIQUE",
+        "aream2": 141614.965,
+        "areakm2": 0.141614965
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.62137383,
+          6.259097835
+        ]
+      },
+      "properties": {
+        "BARRIO": "ANTONIO NARIÑO",
+        "COMUNA": "SAN JAVIER",
+        "aream2": 393839.6432,
+        "areakm2": 0.393839643
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57912235,
+          6.300566886
+        ]
+      },
+      "properties": {
+        "BARRIO": "DOCE DE OCTUBRE NO.2",
+        "COMUNA": "DOCE DE OCTUBRE",
+        "aream2": 398238.3463,
+        "areakm2": 0.398238346
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54645242,
+          6.292599636
+        ]
+      },
+      "properties": {
+        "BARRIO": "GRANIZAL",
+        "COMUNA": "POPULAR",
+        "aream2": 244834.4495,
+        "areakm2": 0.244834449
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55596752,
+          6.240653857
+        ]
+      },
+      "properties": {
+        "BARRIO": "BUENOS AIRES",
+        "COMUNA": "BUENOS AIRES",
+        "aream2": 293164.7531,
+        "areakm2": 0.293164753
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56189978,
+          6.237053381
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL SALVADOR",
+        "COMUNA": "BUENOS AIRES",
+        "aream2": 354795.9148,
+        "areakm2": 0.354795915
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60235926,
+          6.22902098
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA PALMA",
+        "COMUNA": "BELÉN",
+        "aream2": 334168.9603,
+        "areakm2": 0.33416896
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59075115,
+          6.235304243
+        ]
+      },
+      "properties": {
+        "BARRIO": "ROSALES",
+        "COMUNA": "BELÉN",
+        "aream2": 605073.0533,
+        "areakm2": 0.605073053
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.69037242,
+          6.366965997
+        ]
+      },
+      "properties": {
+        "BARRIO": "URQUITÁ",
+        "COMUNA": "CORREGIMIENTO DE SAN SEBASTIÁN DE PALMITAS",
+        "aream2": 5549309.203,
+        "areakm2": 5.549309203
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58413105,
+          6.250791785
+        ]
+      },
+      "properties": {
+        "BARRIO": "NARANJAL",
+        "COMUNA": "LAURELES ESTADIO",
+        "aream2": 446352.3268,
+        "areakm2": 0.446352327
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5647219,
+          6.266490491
+        ]
+      },
+      "properties": {
+        "BARRIO": "SEVILLA",
+        "COMUNA": "ARANJUEZ",
+        "aream2": 270255.5574,
+        "areakm2": 0.270255557
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54724613,
+          6.272945843
+        ]
+      },
+      "properties": {
+        "BARRIO": "SANTA INÉS",
+        "COMUNA": "MANRIQUE",
+        "aream2": 348299.3811,
+        "areakm2": 0.348299381
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57675903,
+          6.274315626
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL PROGRESO",
+        "COMUNA": "CASTILLA",
+        "aream2": 407603.1468,
+        "areakm2": 0.407603147
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60391324,
+          6.235634705
+        ]
+      },
+      "properties": {
+        "BARRIO": "NUEVA VILLA DEL ABURRÁ",
+        "COMUNA": "BELÉN",
+        "aream2": 188599.6269,
+        "areakm2": 0.188599627
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56733744,
+          6.219411076
+        ]
+      },
+      "properties": {
+        "BARRIO": "CASTROPOL",
+        "COMUNA": "EL POBLADO",
+        "aream2": 606173.4124,
+        "areakm2": 0.606173412
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5643429,
+          6.295854188
+        ]
+      },
+      "properties": {
+        "BARRIO": "BELALCÁZAR",
+        "COMUNA": "CASTILLA",
+        "aream2": 166521.5421,
+        "areakm2": 0.166521542
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57242384,
+          6.247587812
+        ]
+      },
+      "properties": {
+        "BARRIO": "GUAYAQUIL",
+        "COMUNA": "LA CANDELARIA",
+        "aream2": 318201.6939,
+        "areakm2": 0.318201694
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5797525,
+          6.190450714
+        ]
+      },
+      "properties": {
+        "BARRIO": "SANTA MARÍA DE LOS ÁNGELES",
+        "COMUNA": "EL POBLADO",
+        "aream2": 558377.276,
+        "areakm2": 0.558377276
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61090237,
+          6.260857234
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA PRADERA",
+        "COMUNA": "SAN JAVIER",
+        "aream2": 350934.1726,
+        "areakm2": 0.350934173
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55293404,
+          6.294672117
+        ]
+      },
+      "properties": {
+        "BARRIO": "VILLA DEL SOCORRO",
+        "COMUNA": "SANTA CRUZ",
+        "aream2": 229627.8399,
+        "areakm2": 0.22962784
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.49643636,
+          6.222796184
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL PLACER",
+        "COMUNA": "CORREGIMIENTO DE SANTA ELENA",
+        "aream2": 2041703.818,
+        "areakm2": 2.041703818
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.62633148,
+          6.222436617
+        ]
+      },
+      "properties": {
+        "BARRIO": "ALTAVISTA SECTOR CENTRAL",
+        "COMUNA": "CORREGIMIENTO DE ALTAVISTA",
+        "aream2": 2925384.138,
+        "areakm2": 2.925384138
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.66581464,
+          6.211320177
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL SALADO",
+        "COMUNA": "CORREGIMIENTO DE SAN ANTONIO DE PRADO",
+        "aream2": 7326507.716,
+        "areakm2": 7.326507716
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54117804,
+          6.202421722
+        ]
+      },
+      "properties": {
+        "BARRIO": "LAS PALMAS",
+        "COMUNA": "CORREGIMIENTO DE SANTA ELENA",
+        "aream2": 15898139.04,
+        "areakm2": 15.89813904
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.64370797,
+          6.216735832
+        ]
+      },
+      "properties": {
+        "BARRIO": "BUGA PATIO BONITO",
+        "COMUNA": "CORREGIMIENTO DE ALTAVISTA",
+        "aream2": 4146229.613,
+        "areakm2": 4.146229613
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.62149247,
+          6.216099256
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA ESPERANZA",
+        "COMUNA": "CORREGIMIENTO DE ALTAVISTA",
+        "aream2": 2040759.673,
+        "areakm2": 2.040759673
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.52103245,
+          6.203847977
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL PLAN",
+        "COMUNA": "CORREGIMIENTO DE SANTA ELENA",
+        "aream2": 6175500.643,
+        "areakm2": 6.175500643
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6247661,
+          6.203509109
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL JARDÍN",
+        "COMUNA": "CORREGIMIENTO DE ALTAVISTA",
+        "aream2": 2907811.884,
+        "areakm2": 2.907811884
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5735504,
+          6.219944607
+        ]
+      },
+      "properties": {
+        "BARRIO": "VILLA CARLOTA",
+        "COMUNA": "EL POBLADO",
+        "aream2": 935206.769,
+        "areakm2": 0.935206769
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.50111378,
+          6.197499851
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL LLANO SE",
+        "COMUNA": "CORREGIMIENTO DE SANTA ELENA",
+        "aream2": 2117980.111,
+        "areakm2": 2.117980111
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.48989098,
+          6.197511514
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL CERRO",
+        "COMUNA": "CORREGIMIENTO DE SANTA ELENA",
+        "aream2": 1836606.095,
+        "areakm2": 1.836606095
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57099455,
+          6.278427823
+        ]
+      },
+      "properties": {
+        "BARRIO": "TERMINAL DE TRANSPORTE",
+        "COMUNA": "CASTILLA",
+        "aream2": 215849.292,
+        "areakm2": 0.215849292
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.67325868,
+          6.194688235
+        ]
+      },
+      "properties": {
+        "BARRIO": "MONTAÑITA",
+        "COMUNA": "CORREGIMIENTO DE SAN ANTONIO DE PRADO",
+        "aream2": 2332443.375,
+        "areakm2": 2.332443375
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.64741269,
+          6.180549224
+        ]
+      },
+      "properties": {
+        "BARRIO": "SAN ANTONIO DE PRADO",
+        "COMUNA": "CORREGIMIENTO DE SAN ANTONIO DE PRADO",
+        "aream2": 3779851.876,
+        "areakm2": 3.779851876
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.66774339,
+          6.171449692
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA FLORIDA",
+        "COMUNA": "CORREGIMIENTO DE SAN ANTONIO DE PRADO",
+        "aream2": 2819044.631,
+        "areakm2": 2.819044631
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.65337597,
+          6.169797032
+        ]
+      },
+      "properties": {
+        "BARRIO": "SAN JOSÉ",
+        "COMUNA": "CORREGIMIENTO DE SAN ANTONIO DE PRADO",
+        "aream2": 381443.5725,
+        "areakm2": 0.381443572
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.67024431,
+          6.344536741
+        ]
+      },
+      "properties": {
+        "BARRIO": "PALMITAS SECTOR CENTRAL",
+        "COMUNA": "CORREGIMIENTO DE SAN SEBASTIÁN DE PALMITAS",
+        "aream2": 9517018.436,
+        "areakm2": 9.517018436
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.64370228,
+          6.196023806
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA VERDE",
+        "COMUNA": "CORREGIMIENTO DE SAN ANTONIO DE PRADO",
+        "aream2": 6694643.942,
+        "areakm2": 6.694643942
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.65444374,
+          6.31783673
+        ]
+      },
+      "properties": {
+        "BARRIO": "BOQUERÓN",
+        "COMUNA": "CORREGIMIENTO DE SAN CRISTÓBAL",
+        "aream2": 5584048.941,
+        "areakm2": 5.584048941
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60040591,
+          6.30476313
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL CARMELO",
+        "COMUNA": "CORREGIMIENTO DE SAN CRISTÓBAL",
+        "aream2": 1035408.535,
+        "areakm2": 1.035408535
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61682664,
+          6.237997845
+        ]
+      },
+      "properties": {
+        "BARRIO": "ÁREA DE EXPANSIÓN EL NORAL",
+        "COMUNA": "CORREGIMIENTO DE ALTAVISTA",
+        "aream2": 142770.7991,
+        "areakm2": 0.142770799
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61396024,
+          6.23215451
+        ]
+      },
+      "properties": {
+        "BARRIO": "LAS VIOLETAS",
+        "COMUNA": "BELÉN",
+        "aream2": 598539.2059,
+        "areakm2": 0.598539206
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56776191,
+          6.232839278
+        ]
+      },
+      "properties": {
+        "BARRIO": "SAN DIEGO",
+        "COMUNA": "LA CANDELARIA",
+        "aream2": 708320.2614,
+        "areakm2": 0.708320261
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.62717464,
+          6.254950735
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL SALADO",
+        "COMUNA": "SAN JAVIER",
+        "aream2": 438633.3363,
+        "areakm2": 0.438633336
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5894662,
+          6.282606246
+        ]
+      },
+      "properties": {
+        "BARRIO": "BELLO HORIZONTE",
+        "COMUNA": "ROBLEDO",
+        "aream2": 186845.1543,
+        "areakm2": 0.186845154
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56367577,
+          6.253467766
+        ]
+      },
+      "properties": {
+        "BARRIO": "VILLA NUEVA",
+        "COMUNA": "LA CANDELARIA",
+        "aream2": 300243.2567,
+        "areakm2": 0.300243257
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59203996,
+          6.2632107
+        ]
+      },
+      "properties": {
+        "BARRIO": "BATALLÓN CUARTA BRIGADA",
+        "COMUNA": "LAURELES ESTADIO",
+        "aream2": 88174.6557,
+        "areakm2": 0.088174656
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56081435,
+          6.188585126
+        ]
+      },
+      "properties": {
+        "BARRIO": "LOS BALSOS NO.1",
+        "COMUNA": "EL POBLADO",
+        "aream2": 1403630.376,
+        "areakm2": 1.403630376
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58032824,
+          6.231246014
+        ]
+      },
+      "properties": {
+        "BARRIO": "TENCHE",
+        "COMUNA": "GUAYABAL",
+        "aream2": 230563.999,
+        "areakm2": 0.230563999
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54352162,
+          6.287841957
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL COMPROMISO",
+        "COMUNA": "POPULAR",
+        "aream2": 71906.09643,
+        "areakm2": 0.071906096
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54246243,
+          6.240938359
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA LIBERTAD",
+        "COMUNA": "VILLA HERMOSA",
+        "aream2": 312386.8188,
+        "areakm2": 0.312386819
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60457711,
+          6.260784279
+        ]
+      },
+      "properties": {
+        "BARRIO": "LOS ALCÁZARES",
+        "COMUNA": "SAN JAVIER",
+        "aream2": 272545.8339,
+        "areakm2": 0.272545834
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58042768,
+          6.294538264
+        ]
+      },
+      "properties": {
+        "BARRIO": "SAN MARTÍN DE PORRES",
+        "COMUNA": "DOCE DE OCTUBRE",
+        "aream2": 286864.4512,
+        "areakm2": 0.286864451
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58506203,
+          6.235548388
+        ]
+      },
+      "properties": {
+        "BARRIO": "FÁTIMA",
+        "COMUNA": "BELÉN",
+        "aream2": 434654.176,
+        "areakm2": 0.434654176
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56167799,
+          6.308476895
+        ]
+      },
+      "properties": {
+        "BARRIO": "LAS BRISAS",
+        "COMUNA": "CASTILLA",
+        "aream2": 375236.2713,
+        "areakm2": 0.375236271
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.53307041,
+          6.235588583
+        ]
+      },
+      "properties": {
+        "BARRIO": "VILLA LILLIAM",
+        "COMUNA": "VILLA HERMOSA",
+        "aream2": 155174.0174,
+        "areakm2": 0.155174017
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60549558,
+          6.283874339
+        ]
+      },
+      "properties": {
+        "BARRIO": "PAJARITO",
+        "COMUNA": "ROBLEDO",
+        "aream2": 290313.5837,
+        "areakm2": 0.290313584
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58114665,
+          6.222405728
+        ]
+      },
+      "properties": {
+        "BARRIO": "SANTA FÉ",
+        "COMUNA": "GUAYABAL",
+        "aream2": 1025086.765,
+        "areakm2": 1.025086765
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61398153,
+          6.221182506
+        ]
+      },
+      "properties": {
+        "BARRIO": "ÁREA DE EXPANSIÓN ALTAVISTA",
+        "COMUNA": "CORREGIMIENTO DE ALTAVISTA",
+        "aream2": 187810.8705,
+        "areakm2": 0.18781087
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60695496,
+          6.214709603
+        ]
+      },
+      "properties": {
+        "BARRIO": "ÁREA DE EXPANSIÓN BELÉN RINCÓN",
+        "COMUNA": "CORREGIMIENTO DE ALTAVISTA",
+        "aream2": 332744.5613,
+        "areakm2": 0.332744561
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58902804,
+          6.274461157
+        ]
+      },
+      "properties": {
+        "BARRIO": "FACULTAD DE MINAS",
+        "COMUNA": "ROBLEDO",
+        "aream2": 243885.2367,
+        "areakm2": 0.243885237
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55929832,
+          6.290794182
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA ROSA",
+        "COMUNA": "SANTA CRUZ",
+        "aream2": 166181.2766,
+        "areakm2": 0.166181277
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5558392,
+          6.20298947
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL TESORO",
+        "COMUNA": "EL POBLADO",
+        "aream2": 1174855.058,
+        "areakm2": 1.174855058
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59988323,
+          6.287790457
+        ]
+      },
+      "properties": {
+        "BARRIO": "MONTECLARO",
+        "COMUNA": "ROBLEDO",
+        "aream2": 429504.1928,
+        "areakm2": 0.429504193
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55598512,
+          6.273408827
+        ]
+      },
+      "properties": {
+        "BARRIO": "CAMPO VALDÉS NO.1",
+        "COMUNA": "ARANJUEZ",
+        "aream2": 372180.904,
+        "areakm2": 0.372180904
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57602744,
+          6.284452011
+        ]
+      },
+      "properties": {
+        "BARRIO": "ALFONSO LÓPEZ",
+        "COMUNA": "CASTILLA",
+        "aream2": 354325.92,
+        "areakm2": 0.35432592
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61347755,
+          6.273156107
+        ]
+      },
+      "properties": {
+        "BARRIO": "OLAYA HERRERA",
+        "COMUNA": "ROBLEDO",
+        "aream2": 421512.5752,
+        "areakm2": 0.421512575
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.63142646,
+          6.277850949
+        ]
+      },
+      "properties": {
+        "BARRIO": "CABECERA URBANA CORREGIMIENTO SAN CRISTÓBAL",
+        "COMUNA": "CORREGIMIENTO DE SAN CRISTÓBAL",
+        "aream2": 760604.7293,
+        "areakm2": 0.760604729
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61091927,
+          6.20646168
+        ]
+      },
+      "properties": {
+        "BARRIO": "SAN JOSÉ DEL MANZANILLO",
+        "COMUNA": "CORREGIMIENTO DE ALTAVISTA",
+        "aream2": 2072611.251,
+        "areakm2": 2.072611251
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55576405,
+          6.259214008
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA MANSIÓN",
+        "COMUNA": "VILLA HERMOSA",
+        "aream2": 246603.7235,
+        "areakm2": 0.246603724
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57320659,
+          6.270588836
+        ]
+      },
+      "properties": {
+        "BARRIO": "CARIBE",
+        "COMUNA": "CASTILLA",
+        "aream2": 601382.3468,
+        "areakm2": 0.601382347
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56583639,
+          6.204680703
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA FLORIDA",
+        "COMUNA": "EL POBLADO",
+        "aream2": 767667.9731,
+        "areakm2": 0.767667973
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59553112,
+          6.215613271
+        ]
+      },
+      "properties": {
+        "BARRIO": "DIEGO ECHAVARRÍA",
+        "COMUNA": "BELÉN",
+        "aream2": 317833.1264,
+        "areakm2": 0.317833126
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58752907,
+          6.272022989
+        ]
+      },
+      "properties": {
+        "BARRIO": "FACULTAD VETERINARIA Y ZOOTECNIA U.DE.A.",
+        "COMUNA": "ROBLEDO",
+        "aream2": 110127.8683,
+        "areakm2": 0.110127868
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57347099,
+          6.209975717
+        ]
+      },
+      "properties": {
+        "BARRIO": "ASTORGA",
+        "COMUNA": "EL POBLADO",
+        "aream2": 222216.9263,
+        "areakm2": 0.222216926
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58979322,
+          6.273631794
+        ]
+      },
+      "properties": {
+        "BARRIO": "FACULTAD DE MINAS U. NACIONAL",
+        "COMUNA": "ROBLEDO",
+        "aream2": 28465.52324,
+        "areakm2": 0.028465523
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56083598,
+          6.280727864
+        ]
+      },
+      "properties": {
+        "BARRIO": "ARANJUEZ",
+        "COMUNA": "ARANJUEZ",
+        "aream2": 361138.3572,
+        "areakm2": 0.361138357
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59865856,
+          6.262613112
+        ]
+      },
+      "properties": {
+        "BARRIO": "CALASANZ",
+        "COMUNA": "LA AMÉRICA",
+        "aream2": 313244.2563,
+        "areakm2": 0.313244256
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55352508,
+          6.264498795
+        ]
+      },
+      "properties": {
+        "BARRIO": "MANRIQUE CENTRAL NO.2",
+        "COMUNA": "MANRIQUE",
+        "aream2": 240903.5348,
+        "areakm2": 0.240903535
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.53639885,
+          6.238027299
+        ]
+      },
+      "properties": {
+        "BARRIO": "SAN ANTONIO",
+        "COMUNA": "VILLA HERMOSA",
+        "aream2": 152122.9485,
+        "areakm2": 0.152122948
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60318423,
+          6.210408963
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL RINCÓN",
+        "COMUNA": "BELÉN",
+        "aream2": 662339.5252,
+        "areakm2": 0.662339525
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61288535,
+          6.252833873
+        ]
+      },
+      "properties": {
+        "BARRIO": "SIN NOMBRE",
+        "COMUNA": "SIN NOMBRE",
+        "aream2": 526126.4943,
+        "areakm2": 0.526126494
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56466769,
+          6.280855516
+        ]
+      },
+      "properties": {
+        "BARRIO": "BERMEJAL-LOS ÁLAMOS",
+        "COMUNA": "ARANJUEZ",
+        "aream2": 159810.2543,
+        "areakm2": 0.159810254
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56740709,
+          6.259917148
+        ]
+      },
+      "properties": {
+        "BARRIO": "JESÚS NAZARENO",
+        "COMUNA": "LA CANDELARIA",
+        "aream2": 305187.6809,
+        "areakm2": 0.305187681
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.52965761,
+          6.22825941
+        ]
+      },
+      "properties": {
+        "BARRIO": "OCHO DE MARZO",
+        "COMUNA": "BUENOS AIRES",
+        "aream2": 58069.34583,
+        "areakm2": 0.058069346
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60246434,
+          6.280971804
+        ]
+      },
+      "properties": {
+        "BARRIO": "CUCARACHO",
+        "COMUNA": "ROBLEDO",
+        "aream2": 625659.6127,
+        "areakm2": 0.625659613
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61735664,
+          6.248388243
+        ]
+      },
+      "properties": {
+        "BARRIO": "BELENCITO",
+        "COMUNA": "SAN JAVIER",
+        "aream2": 368036.6929,
+        "areakm2": 0.368036693
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57992749,
+          6.238538357
+        ]
+      },
+      "properties": {
+        "BARRIO": "CERRO NUTIBARA",
+        "COMUNA": "BELÉN",
+        "aream2": 135109.2968,
+        "areakm2": 0.135109297
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60515518,
+          6.245929926
+        ]
+      },
+      "properties": {
+        "BARRIO": "SIMÓN BOLÍVAR",
+        "COMUNA": "LA AMÉRICA",
+        "aream2": 291448.5188,
+        "areakm2": 0.291448519
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61423083,
+          6.258021594
+        ]
+      },
+      "properties": {
+        "BARRIO": "SAN JAVIER NO.2",
+        "COMUNA": "SAN JAVIER",
+        "aream2": 151082.8788,
+        "areakm2": 0.151082879
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60453644,
+          6.251641532
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA AMÉRICA",
+        "COMUNA": "LA AMÉRICA",
+        "aream2": 358441.1283,
+        "areakm2": 0.358441128
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58539443,
+          6.300187493
+        ]
+      },
+      "properties": {
+        "BARRIO": "PICACHITO",
+        "COMUNA": "DOCE DE OCTUBRE",
+        "aream2": 123730.5838,
+        "areakm2": 0.123730584
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5595253,
+          6.27421271
+        ]
+      },
+      "properties": {
+        "BARRIO": "BRASILIA",
+        "COMUNA": "ARANJUEZ",
+        "aream2": 327324.5071,
+        "areakm2": 0.327324507
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59067583,
+          6.246394909
+        ]
+      },
+      "properties": {
+        "BARRIO": "BOLIVARIANA",
+        "COMUNA": "LAURELES ESTADIO",
+        "aream2": 321000.1294,
+        "areakm2": 0.321000129
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55555233,
+          6.285739745
+        ]
+      },
+      "properties": {
+        "BARRIO": "BERLÍN",
+        "COMUNA": "ARANJUEZ",
+        "aream2": 300194.9226,
+        "areakm2": 0.300194923
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61336619,
+          6.248100534
+        ]
+      },
+      "properties": {
+        "BARRIO": "SANTA MÓNICA",
+        "COMUNA": "LA AMÉRICA",
+        "aream2": 355860.1041,
+        "areakm2": 0.355860104
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5791369,
+          6.235088765
+        ]
+      },
+      "properties": {
+        "BARRIO": "CERRO NUTIBARA",
+        "COMUNA": "BELÉN",
+        "aream2": 399182.4831,
+        "areakm2": 0.399182483
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59663174,
+          6.237316614
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL NOGAL-LOS ALMENDROS",
+        "COMUNA": "BELÉN",
+        "aream2": 248378.5927,
+        "areakm2": 0.248378593
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58523946,
+          6.307672624
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL TRIUNFO",
+        "COMUNA": "DOCE DE OCTUBRE",
+        "aream2": 117074.8384,
+        "areakm2": 0.117074838
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58325272,
+          6.303203765
+        ]
+      },
+      "properties": {
+        "BARRIO": "MIRADOR DEL DOCE",
+        "COMUNA": "DOCE DE OCTUBRE",
+        "aream2": 64825.65244,
+        "areakm2": 0.064825652
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58949455,
+          6.242263378
+        ]
+      },
+      "properties": {
+        "BARRIO": "U.P.B",
+        "COMUNA": "LAURELES ESTADIO",
+        "aream2": 216528.5091,
+        "areakm2": 0.216528509
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55067777,
+          6.249063263
+        ]
+      },
+      "properties": {
+        "BARRIO": "ENCISO",
+        "COMUNA": "VILLA HERMOSA",
+        "aream2": 335273.5773,
+        "areakm2": 0.335273577
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57674114,
+          6.292790872
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA ESPERANZA",
+        "COMUNA": "DOCE DE OCTUBRE",
+        "aream2": 405382.3748,
+        "areakm2": 0.405382375
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5328583,
+          6.232448563
+        ]
+      },
+      "properties": {
+        "BARRIO": "LAS ESTANCIAS",
+        "COMUNA": "VILLA HERMOSA",
+        "aream2": 302012.471,
+        "areakm2": 0.302012471
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55326331,
+          6.303408805
+        ]
+      },
+      "properties": {
+        "BARRIO": "PABLO VI",
+        "COMUNA": "SANTA CRUZ",
+        "aream2": 77739.29011,
+        "areakm2": 0.07773929
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57617197,
+          6.262530378
+        ]
+      },
+      "properties": {
+        "BARRIO": "UNIVERSIDAD NACIONAL",
+        "COMUNA": "ROBLEDO",
+        "aream2": 482979.5009,
+        "areakm2": 0.482979501
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.68907271,
+          6.357444012
+        ]
+      },
+      "properties": {
+        "BARRIO": "POTRERA MISERENGA",
+        "COMUNA": "CORREGIMIENTO DE SAN SEBASTIÁN DE PALMITAS",
+        "aream2": 5267336.927,
+        "areakm2": 5.267336927
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58684925,
+          6.285376186
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL DIAMANTE",
+        "COMUNA": "ROBLEDO",
+        "aream2": 375485.5464,
+        "areakm2": 0.375485546
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59465337,
+          6.279096516
+        ]
+      },
+      "properties": {
+        "BARRIO": "PALENQUE",
+        "COMUNA": "ROBLEDO",
+        "aream2": 382413.9378,
+        "areakm2": 0.382413938
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57275832,
+          6.227330342
+        ]
+      },
+      "properties": {
+        "BARRIO": "BARRIO COLOMBIA",
+        "COMUNA": "EL POBLADO",
+        "aream2": 401681.7105,
+        "areakm2": 0.401681711
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55854156,
+          6.307394907
+        ]
+      },
+      "properties": {
+        "BARRIO": "TOSCANA",
+        "COMUNA": "CASTILLA",
+        "aream2": 290053.5505,
+        "areakm2": 0.290053551
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59888377,
+          6.252155317
+        ]
+      },
+      "properties": {
+        "BARRIO": "LOS PINOS",
+        "COMUNA": "LA AMÉRICA",
+        "aream2": 232997.6276,
+        "areakm2": 0.232997628
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57752178,
+          6.198657602
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA AGUACATALA",
+        "COMUNA": "EL POBLADO",
+        "aream2": 622091.818,
+        "areakm2": 0.622091818
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54553943,
+          6.244448203
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL PINAL",
+        "COMUNA": "VILLA HERMOSA",
+        "aream2": 413417.1642,
+        "areakm2": 0.413417164
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60510572,
+          6.27747678
+        ]
+      },
+      "properties": {
+        "BARRIO": "FUENTE CLARA",
+        "COMUNA": "ROBLEDO",
+        "aream2": 236440.983,
+        "areakm2": 0.236440983
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.53976735,
+          6.299277144
+        ]
+      },
+      "properties": {
+        "BARRIO": "SANTO DOMINGO SAVIO NO.2",
+        "COMUNA": "POPULAR",
+        "aream2": 264750.1067,
+        "areakm2": 0.264750107
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55883282,
+          6.238336934
+        ]
+      },
+      "properties": {
+        "BARRIO": "GERONA",
+        "COMUNA": "BUENOS AIRES",
+        "aream2": 249125.1515,
+        "areakm2": 0.249125152
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61178854,
+          6.243559293
+        ]
+      },
+      "properties": {
+        "BARRIO": "SANTA TERESITA",
+        "COMUNA": "LA AMÉRICA",
+        "aream2": 317659.2859,
+        "areakm2": 0.317659286
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56263649,
+          6.275102556
+        ]
+      },
+      "properties": {
+        "BARRIO": "MIRANDA",
+        "COMUNA": "ARANJUEZ",
+        "aream2": 230378.2624,
+        "areakm2": 0.230378262
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57353118,
+          6.285907559
+        ]
+      },
+      "properties": {
+        "BARRIO": "FRANCISCO ANTONIO ZEA",
+        "COMUNA": "CASTILLA",
+        "aream2": 233064.7085,
+        "areakm2": 0.233064709
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59011636,
+          6.25648256
+        ]
+      },
+      "properties": {
+        "BARRIO": "U.D. ATANASIO GIRARDOT",
+        "COMUNA": "LAURELES ESTADIO",
+        "aream2": 417796.7007,
+        "areakm2": 0.417796701
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59865038,
+          6.211007647
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA MOTA",
+        "COMUNA": "BELÉN",
+        "aream2": 508241.2322,
+        "areakm2": 0.508241232
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60307965,
+          6.203425223
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA HONDONADA",
+        "COMUNA": "BELÉN",
+        "aream2": 462120.3081,
+        "areakm2": 0.462120308
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.53981533,
+          6.252887931
+        ]
+      },
+      "properties": {
+        "BARRIO": "LLANADITAS",
+        "COMUNA": "VILLA HERMOSA",
+        "aream2": 320557.7245,
+        "areakm2": 0.320557724
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55759775,
+          6.230755173
+        ]
+      },
+      "properties": {
+        "BARRIO": "LORETO",
+        "COMUNA": "BUENOS AIRES",
+        "aream2": 666997.6093,
+        "areakm2": 0.666997609
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56165488,
+          6.259687895
+        ]
+      },
+      "properties": {
+        "BARRIO": "PRADO",
+        "COMUNA": "LA CANDELARIA",
+        "aream2": 624440.5009,
+        "areakm2": 0.624440501
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54101648,
+          6.246622131
+        ]
+      },
+      "properties": {
+        "BARRIO": "TRECE DE NOVIEMBRE",
+        "COMUNA": "VILLA HERMOSA",
+        "aream2": 173902.3705,
+        "areakm2": 0.173902371
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57922148,
+          6.306998448
+        ]
+      },
+      "properties": {
+        "BARRIO": "DOCE DE OCTUBRE NO.1",
+        "COMUNA": "DOCE DE OCTUBRE",
+        "aream2": 436281.8957,
+        "areakm2": 0.436281896
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60342624,
+          6.218474155
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA LOMA DE LOS BERNAL",
+        "COMUNA": "BELÉN",
+        "aream2": 485034.4671,
+        "areakm2": 0.485034467
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.52961099,
+          6.229575838
+        ]
+      },
+      "properties": {
+        "BARRIO": "JUAN PABLO II",
+        "COMUNA": "BUENOS AIRES",
+        "aream2": 75047.3032,
+        "areakm2": 0.075047303
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.62820516,
+          6.250440798
+        ]
+      },
+      "properties": {
+        "BARRIO": "NUEVOS CONQUISTADORES",
+        "COMUNA": "SAN JAVIER",
+        "aream2": 224237.2513,
+        "areakm2": 0.224237251
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57556274,
+          6.206396345
+        ]
+      },
+      "properties": {
+        "BARRIO": "PATIO BONITO",
+        "COMUNA": "EL POBLADO",
+        "aream2": 729057.8331,
+        "areakm2": 0.729057833
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5493459,
+          6.264174341
+        ]
+      },
+      "properties": {
+        "BARRIO": "MANRIQUE ORIENTAL",
+        "COMUNA": "MANRIQUE",
+        "aream2": 373291.5675,
+        "areakm2": 0.373291568
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57325406,
+          6.300892947
+        ]
+      },
+      "properties": {
+        "BARRIO": "PEDREGAL",
+        "COMUNA": "DOCE DE OCTUBRE",
+        "aream2": 581056.4901,
+        "areakm2": 0.58105649
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54170875,
+          6.291193047
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA ESPERANZA NO.2",
+        "COMUNA": "POPULAR",
+        "aream2": 67338.20284,
+        "areakm2": 0.067338203
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59084062,
+          6.279616052
+        ]
+      },
+      "properties": {
+        "BARRIO": "VILLA FLORA",
+        "COMUNA": "ROBLEDO",
+        "aream2": 250778.9665,
+        "areakm2": 0.250778967
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57451007,
+          6.184235012
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL DIAMANTE NO.2",
+        "COMUNA": "EL POBLADO",
+        "aream2": 661036.4279,
+        "areakm2": 0.661036428
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56912102,
+          6.284360263
+        ]
+      },
+      "properties": {
+        "BARRIO": "OLEODUCTO",
+        "COMUNA": "CASTILLA",
+        "aream2": 288176.4446,
+        "areakm2": 0.288176445
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5969288,
+          6.269018556
+        ]
+      },
+      "properties": {
+        "BARRIO": "FERRINI",
+        "COMUNA": "LA AMÉRICA",
+        "aream2": 199967.8111,
+        "areakm2": 0.199967811
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60561765,
+          6.27488707
+        ]
+      },
+      "properties": {
+        "BARRIO": "BLANQUIZAL",
+        "COMUNA": "SAN JAVIER",
+        "aream2": 121930.0509,
+        "areakm2": 0.121930051
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56483597,
+          6.30426279
+        ]
+      },
+      "properties": {
+        "BARRIO": "BOYACÁ",
+        "COMUNA": "CASTILLA",
+        "aream2": 256398.5619,
+        "areakm2": 0.256398562
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5417961,
+          6.287882939
+        ]
+      },
+      "properties": {
+        "BARRIO": "ALDEA PABLO VI",
+        "COMUNA": "POPULAR",
+        "aream2": 71663.74899,
+        "areakm2": 0.071663749
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54995247,
+          6.25772757
+        ]
+      },
+      "properties": {
+        "BARRIO": "VILLA HERMOSA",
+        "COMUNA": "VILLA HERMOSA",
+        "aream2": 393468.2331,
+        "areakm2": 0.393468233
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56206872,
+          6.211080962
+        ]
+      },
+      "properties": {
+        "BARRIO": "LAS LOMAS NO.1",
+        "COMUNA": "EL POBLADO",
+        "aream2": 486146.1482,
+        "areakm2": 0.486146148
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55889325,
+          6.293217265
+        ]
+      },
+      "properties": {
+        "BARRIO": "SANTA CRUZ",
+        "COMUNA": "SANTA CRUZ",
+        "aream2": 237218.194,
+        "areakm2": 0.237218194
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61997233,
+          6.243916808
+        ]
+      },
+      "properties": {
+        "BARRIO": "BETANIA",
+        "COMUNA": "SAN JAVIER",
+        "aream2": 349073.9146,
+        "areakm2": 0.349073915
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58247765,
+          6.288822829
+        ]
+      },
+      "properties": {
+        "BARRIO": "KENNEDY",
+        "COMUNA": "DOCE DE OCTUBRE",
+        "aream2": 490942.6226,
+        "areakm2": 0.490942623
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.51781514,
+          6.273219398
+        ]
+      },
+      "properties": {
+        "BARRIO": "PIEDRAS BLANCAS - MATASANO",
+        "COMUNA": "CORREGIMIENTO DE SANTA ELENA",
+        "aream2": 22235849.23,
+        "areakm2": 22.23584923
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60687859,
+          6.293424218
+        ]
+      },
+      "properties": {
+        "BARRIO": "PAJARITO",
+        "COMUNA": "CORREGIMIENTO DE SAN CRISTÓBAL",
+        "aream2": 1029466.669,
+        "areakm2": 1.029466669
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54776554,
+          6.254267787
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA LADERA",
+        "COMUNA": "VILLA HERMOSA",
+        "aream2": 542962.3341,
+        "areakm2": 0.542962334
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.562312,
+          6.219794825
+        ]
+      },
+      "properties": {
+        "BARRIO": "ASOMADERA NO.2",
+        "COMUNA": "BUENOS AIRES",
+        "aream2": 657292.584,
+        "areakm2": 0.657292584
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56798871,
+          6.272277962
+        ]
+      },
+      "properties": {
+        "BARRIO": "PARQUE NORTE",
+        "COMUNA": "ARANJUEZ",
+        "aream2": 284606.6184,
+        "areakm2": 0.284606618
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59050811,
+          6.29196775
+        ]
+      },
+      "properties": {
+        "BARRIO": "AURES NO.2",
+        "COMUNA": "ROBLEDO",
+        "aream2": 647667.0154,
+        "areakm2": 0.647667015
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55175212,
+          6.245219962
+        ]
+      },
+      "properties": {
+        "BARRIO": "SUCRE",
+        "COMUNA": "VILLA HERMOSA",
+        "aream2": 340196.6233,
+        "areakm2": 0.340196623
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.66244069,
+          6.290603566
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL UVITO",
+        "COMUNA": "CORREGIMIENTO DE SAN CRISTÓBAL",
+        "aream2": 1743166.032,
+        "areakm2": 1.743166032
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.66159533,
+          6.30666334
+        ]
+      },
+      "properties": {
+        "BARRIO": "NARANJAL",
+        "COMUNA": "CORREGIMIENTO DE SAN CRISTÓBAL",
+        "aream2": 1971788.617,
+        "areakm2": 1.971788617
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.66243012,
+          6.26885803
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA PALMA",
+        "COMUNA": "CORREGIMIENTO DE SAN CRISTÓBAL",
+        "aream2": 7143676.073,
+        "areakm2": 7.143676073
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.50121952,
+          6.251795401
+        ]
+      },
+      "properties": {
+        "BARRIO": "MAZO",
+        "COMUNA": "CORREGIMIENTO DE SANTA ELENA",
+        "aream2": 5012247.907,
+        "areakm2": 5.012247907
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.64334983,
+          6.287884911
+        ]
+      },
+      "properties": {
+        "BARRIO": "TRAVESÍAS",
+        "COMUNA": "CORREGIMIENTO DE SAN CRISTÓBAL",
+        "aream2": 1533557.807,
+        "areakm2": 1.533557807
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.62864545,
+          6.286767712
+        ]
+      },
+      "properties": {
+        "BARRIO": "PEDREGAL ALTO",
+        "COMUNA": "CORREGIMIENTO DE SAN CRISTÓBAL",
+        "aream2": 3070974.993,
+        "areakm2": 3.070974993
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.64702702,
+          6.248031031
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL CORAZÓN EL MORRO",
+        "COMUNA": "CORREGIMIENTO DE ALTAVISTA",
+        "aream2": 7359931.934,
+        "areakm2": 7.359931934
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.66460408,
+          6.28111391
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL PATIO",
+        "COMUNA": "CORREGIMIENTO DE SAN CRISTÓBAL",
+        "aream2": 3063864.206,
+        "areakm2": 3.063864206
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.65103779,
+          6.282675217
+        ]
+      },
+      "properties": {
+        "BARRIO": "LAS PLAYAS",
+        "COMUNA": "CORREGIMIENTO DE SAN CRISTÓBAL",
+        "aream2": 1354302.362,
+        "areakm2": 1.354302362
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60823854,
+          6.26994379
+        ]
+      },
+      "properties": {
+        "BARRIO": "ÁREA DE EXPANSIÓN SAN CRISTÓBAL",
+        "COMUNA": "CORREGIMIENTO DE SAN CRISTÓBAL",
+        "aream2": 721793.3009,
+        "areakm2": 0.721793301
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.62937501,
+          6.261947835
+        ]
+      },
+      "properties": {
+        "BARRIO": "EDUARDO SANTOS",
+        "COMUNA": "CORREGIMIENTO DE SAN CRISTÓBAL",
+        "aream2": 50997.82708,
+        "areakm2": 0.050997827
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58544753,
+          6.199038454
+        ]
+      },
+      "properties": {
+        "BARRIO": "GUAYABAL",
+        "COMUNA": "GUAYABAL",
+        "aream2": 747199.0803,
+        "areakm2": 0.74719908
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.49840678,
+          6.209486092
+        ]
+      },
+      "properties": {
+        "BARRIO": "SANTA ELENA SECTOR CENTRAL",
+        "COMUNA": "CORREGIMIENTO DE SANTA ELENA",
+        "aream2": 3229027.317,
+        "areakm2": 3.229027317
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.62854552,
+          6.300438784
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA ILUSIÓN",
+        "COMUNA": "CORREGIMIENTO DE SAN CRISTÓBAL",
+        "aream2": 3069589.778,
+        "areakm2": 3.069589778
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57646919,
+          6.280602378
+        ]
+      },
+      "properties": {
+        "BARRIO": "CÓRDOBA",
+        "COMUNA": "ROBLEDO",
+        "aream2": 234870.3026,
+        "areakm2": 0.234870303
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56912341,
+          6.255686925
+        ]
+      },
+      "properties": {
+        "BARRIO": "ESTACIÓN VILLA",
+        "COMUNA": "LA CANDELARIA",
+        "aream2": 195054.053,
+        "areakm2": 0.195054053
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56686531,
+          6.310406273
+        ]
+      },
+      "properties": {
+        "BARRIO": "FLORENCIA",
+        "COMUNA": "CASTILLA",
+        "aream2": 292988.6451,
+        "areakm2": 0.292988645
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57375499,
+          6.278775725
+        ]
+      },
+      "properties": {
+        "BARRIO": "CEMENTERIO UNIVERSAL",
+        "COMUNA": "CASTILLA",
+        "aream2": 94191.08939,
+        "areakm2": 0.094191089
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.67741406,
+          6.247922176
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL ASTILLERO",
+        "COMUNA": "CORREGIMIENTO DE SAN ANTONIO DE PRADO",
+        "aream2": 14311073.79,
+        "areakm2": 14.31107379
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.67191247,
+          6.183216321
+        ]
+      },
+      "properties": {
+        "BARRIO": "POTRERITO",
+        "COMUNA": "CORREGIMIENTO DE SAN ANTONIO DE PRADO",
+        "aream2": 4283350.967,
+        "areakm2": 4.283350967
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61349784,
+          6.284395702
+        ]
+      },
+      "properties": {
+        "BARRIO": "ÁREA DE EXPANSIÓN PAJARITO",
+        "COMUNA": "CORREGIMIENTO DE SAN CRISTÓBAL",
+        "aream2": 2369949.681,
+        "areakm2": 2.369949681
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.65503545,
+          6.1775809
+        ]
+      },
+      "properties": {
+        "BARRIO": "ÁREA DE EXPANSIÓN SAN ANTONIO DE PRADO",
+        "COMUNA": "CORREGIMIENTO DE SAN ANTONIO DE PRADO",
+        "aream2": 867148.9852,
+        "areakm2": 0.867148985
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.63313507,
+          6.265033379
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA LOMA",
+        "COMUNA": "CORREGIMIENTO DE SAN CRISTÓBAL",
+        "aream2": 6576271.999,
+        "areakm2": 6.576271999
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.69276574,
+          6.228510909
+        ]
+      },
+      "properties": {
+        "BARRIO": "YARUMALITO",
+        "COMUNA": "CORREGIMIENTO DE SAN ANTONIO DE PRADO",
+        "aream2": 17670905.86,
+        "areakm2": 17.67090586
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55596441,
+          6.281339628
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA PIÑUELA",
+        "COMUNA": "ARANJUEZ",
+        "aream2": 217252.2233,
+        "areakm2": 0.217252223
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.58123601,
+          6.283643721
+        ]
+      },
+      "properties": {
+        "BARRIO": "LÓPEZ DE  MESA",
+        "COMUNA": "ROBLEDO",
+        "aream2": 199916.3892,
+        "areakm2": 0.199916389
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.66251721,
+          6.298333789
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA CUCHILLA",
+        "COMUNA": "CORREGIMIENTO DE SAN CRISTÓBAL",
+        "aream2": 1990881.634,
+        "areakm2": 1.990881634
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61393303,
+          6.304462977
+        ]
+      },
+      "properties": {
+        "BARRIO": "YOLOMBO",
+        "COMUNA": "CORREGIMIENTO DE SAN CRISTÓBAL",
+        "aream2": 4183240.65,
+        "areakm2": 4.18324065
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.54850721,
+          6.283668238
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA SALLE",
+        "COMUNA": "MANRIQUE",
+        "aream2": 367713.593,
+        "areakm2": 0.367713593
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59146028,
+          6.30135956
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL PICACHO",
+        "COMUNA": "CORREGIMIENTO DE SAN CRISTÓBAL",
+        "aream2": 1804058.241,
+        "areakm2": 1.804058241
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.64680993,
+          6.298151055
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL LLANO",
+        "COMUNA": "CORREGIMIENTO DE SAN CRISTÓBAL",
+        "aream2": 1174150.841,
+        "areakm2": 1.174150841
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.57211261,
+          6.290906526
+        ]
+      },
+      "properties": {
+        "BARRIO": "CASTILLA",
+        "COMUNA": "CASTILLA",
+        "aream2": 552601.2973,
+        "areakm2": 0.552601297
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59094414,
+          6.251392689
+        ]
+      },
+      "properties": {
+        "BARRIO": "FLORIDA NUEVA",
+        "COMUNA": "LAURELES ESTADIO",
+        "aream2": 249111.2122,
+        "areakm2": 0.249111212
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59414615,
+          6.259921298
+        ]
+      },
+      "properties": {
+        "BARRIO": "ESTADIO",
+        "COMUNA": "LAURELES ESTADIO",
+        "aream2": 363921.5878,
+        "areakm2": 0.363921588
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6180467,
+          6.261008009
+        ]
+      },
+      "properties": {
+        "BARRIO": "EL SOCORRO",
+        "COMUNA": "SAN JAVIER",
+        "aream2": 182432.3372,
+        "areakm2": 0.182432337
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.53967068,
+          6.264985258
+        ]
+      },
+      "properties": {
+        "BARRIO": "VERSALLES NO.2",
+        "COMUNA": "MANRIQUE",
+        "aream2": 248042.9441,
+        "areakm2": 0.248042944
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59298281,
+          6.200001493
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA COLINA",
+        "COMUNA": "GUAYABAL",
+        "aream2": 677859.7426,
+        "areakm2": 0.677859743
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61731025,
+          6.255831217
+        ]
+      },
+      "properties": {
+        "BARRIO": "SAN JAVIER NO.1",
+        "COMUNA": "SAN JAVIER",
+        "aream2": 227533.1089,
+        "areakm2": 0.227533109
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.56205433,
+          6.243687686
+        ]
+      },
+      "properties": {
+        "BARRIO": "BOMBONÁ NO.1",
+        "COMUNA": "LA CANDELARIA",
+        "aream2": 207289.0801,
+        "areakm2": 0.20728908
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55949584,
+          6.299796899
+        ]
+      },
+      "properties": {
+        "BARRIO": "HÉCTOR ABAD GÓMEZ",
+        "COMUNA": "CASTILLA",
+        "aream2": 240129.6679,
+        "areakm2": 0.240129668
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60781971,
+          6.23050174
+        ]
+      },
+      "properties": {
+        "BARRIO": "LOS ALPES",
+        "COMUNA": "BELÉN",
+        "aream2": 279886.3977,
+        "areakm2": 0.279886398
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.61280306,
+          6.253513896
+        ]
+      },
+      "properties": {
+        "BARRIO": "CAMPO ALEGRE",
+        "COMUNA": "LA AMÉRICA",
+        "aream2": 342591.0784,
+        "areakm2": 0.342591078
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.60837565,
+          6.224302057
+        ]
+      },
+      "properties": {
+        "BARRIO": "ALTAVISTA",
+        "COMUNA": "BELÉN",
+        "aream2": 403436.2846,
+        "areakm2": 0.403436285
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.71253177,
+          6.350075192
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA SUCIA",
+        "COMUNA": "CORREGIMIENTO DE SAN SEBASTIÁN DE PALMITAS",
+        "aream2": 2622547.191,
+        "areakm2": 2.622547191
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.70069863,
+          6.343514615
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA ALDEA",
+        "COMUNA": "CORREGIMIENTO DE SAN SEBASTIÁN DE PALMITAS",
+        "aream2": 1967877.019,
+        "areakm2": 1.967877019
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.55194156,
+          6.272971918
+        ]
+      },
+      "properties": {
+        "BARRIO": "CAMPO VALDÉS NO.2",
+        "COMUNA": "MANRIQUE",
+        "aream2": 388808.8728,
+        "areakm2": 0.388808873
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.59329352,
+          6.230145329
+        ]
+      },
+      "properties": {
+        "BARRIO": "GRANADA",
+        "COMUNA": "BELÉN",
+        "aream2": 184341.657,
+        "areakm2": 0.184341657
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.69343819,
+          6.314282129
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA FRISOLA",
+        "COMUNA": "CORREGIMIENTO DE SAN SEBASTIÁN DE PALMITAS",
+        "aream2": 8813307.761,
+        "areakm2": 8.813307761
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.67891608,
+          6.319159855
+        ]
+      },
+      "properties": {
+        "BARRIO": "VOLCANA GUAYABAL",
+        "COMUNA": "CORREGIMIENTO DE SAN SEBASTIÁN DE PALMITAS",
+        "aream2": 10893364.64,
+        "areakm2": 10.89336464
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.70233539,
+          6.295775617
+        ]
+      },
+      "properties": {
+        "BARRIO": "LA SUIZA",
+        "COMUNA": "CORREGIMIENTO DE SAN SEBASTIÁN DE PALMITAS",
+        "aream2": 13161514.42,
+        "areakm2": 13.16151442
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.63889588,
+          6.310251245
+        ]
+      },
+      "properties": {
+        "BARRIO": "SAN JOSÉ DE LA MONTAÑA",
+        "COMUNA": "CORREGIMIENTO DE SAN CRISTÓBAL",
+        "aream2": 3829314.688,
+        "areakm2": 3.829314688
+      }
+    }
+  ]
+}
