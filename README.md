@@ -479,7 +479,7 @@ Abrir manualmente:
 ## 📞 Contacto
 
 **Proyecto Final - Ciencia de Datos Avanzada**  
-Autor: Juan Diego  
+Autores: Juan Diego, Fernando Estrada, Juan Manuel
 Dataset: EAGIC - Catastro de Medellín
 
 ---
