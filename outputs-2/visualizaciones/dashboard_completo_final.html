@@ -746,7 +746,7 @@
                     <div class="metric-header">
                         <div>
                             <div class="metric-label">Score de Calidad</div>
-                            <div class="metric-value">94.2</div>
+                            <div class="metric-value">98.22</div>
                         </div>
                         <div class="metric-icon">
                             <i class="fas fa-star"></i>
@@ -765,7 +765,7 @@
                     <div class="metric-header">
                         <div>
                             <div class="metric-label">Registros Imputados</div>
-                            <div class="metric-value">28,543</div>
+                            <div class="metric-value">47,956</div>
                         </div>
                         <div class="metric-icon">
                             <i class="fas fa-fill-drip"></i>
@@ -996,11 +996,11 @@
                 <div class="chart-card">
                     <h3 style="margin-bottom: 1rem; color: var(--success-color);">✅ Validaciones</h3>
                     <ul style="list-style: none; font-size: 0.95rem;">
-                        <li style="margin-bottom: 0.5rem;"><strong>Datos válidos:</strong> 2,153,596</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Datos válidos:</strong> 1,154,823</li>
                         <li style="margin-bottom: 0.5rem;"><strong>Duplicados:</strong> 3,247 (-0.15%)</li>
                         <li style="margin-bottom: 0.5rem;"><strong>Nulos tratados:</strong> 28,543</li>
                         <li style="margin-bottom: 0.5rem;"><strong>Outliers detectados:</strong> 8,432</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>Score final:</strong> 99.87/100</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>Score final:</strong> 98.94/100</li>
                     </ul>
                 </div>
             </div>
@@ -1086,7 +1086,7 @@
         // Gráfico de Evolución
         var evoluccionData = [{
             x: ['Etapa Original', 'Después de ETL', 'Después de Imputación'],
-            y: [85.2, 92.8, 98.5],
+            y: [85.2, 92.8, 95.86],
             type: 'scatter',
             mode: 'lines+markers',
             name: 'Completitud %',
@@ -1106,13 +1106,13 @@
 
         // Gráfico de Imputaciones
         var imputacionesData = [{
-            x: ['Área Construida', 'Puntaje', 'Tipo Construcción', 'Otros'],
-            y: [12543, 8932, 5234, 1834],
+            x: ['Área Construida', 'Puntaje', 'Tipo Construcción'],
+            y: [47956, 47956, 47956],
             type: 'bar',
             marker: {
                 color: ['#667eea', '#764ba2', '#f093fb', '#f5576c']
             },
-            text: ['12,543', '8,932', '5,234', '1,834'],
+            text: ['47,956', '47,956', '47,956'],
             textposition: 'outside'
         }];
 
@@ -1157,9 +1157,9 @@
         var scoreData = [{
             type: 'indicator',
             mode: 'gauge+number+delta',
-            value: 94.2,
+            value: 98.94,
             title: {text: 'Score de Calidad'},
-            delta: {reference: 90, suffix: ' vs meta'},
+            delta: {reference: 95.86, suffix: ' puntos de mejora'},
             gauge: {
                 axis: {range: [0, 100]},
                 bar: {color: '#667eea'},
